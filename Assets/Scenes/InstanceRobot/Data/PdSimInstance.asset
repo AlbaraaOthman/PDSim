@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26bf7a6cc511a7944ae3d20c7320e177, type: 3}
+  m_Name: PdSimInstance
+  m_EditorClassIdentifier: 
+  objects:
+  - name: loc-0
+    type: Location
+  - name: loc-1
+    type: Location
+  - name: loc-2
+    type: Location
+  - name: loc-3
+    type: Location
+  - name: loc-4
+    type: Location
+  - name: loc-5
+    type: Location
+  - name: loc-6
+    type: Location
+  - name: loc-7
+    type: Location
+  - name: loc-8
+    type: Location
+  - name: loc-9
+    type: Location
+  - name: loc-10
+    type: Location
+  - name: loc-11
+    type: Location
+  - name: loc-12
+    type: Location
+  - name: loc-13
+    type: Location
+  - name: loc-14
+    type: Location
+  - name: loc-15
+    type: Location
+  - name: L001
+    type: Bricks
+  - name: L003
+    type: Bricks
+  - name: L002
+    type: Bricks
+  - name: L004
+    type: Bricks
+  - name: R001
+    type: Robot
+  init:
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - L001
+    - loc-3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - L001
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - L003
+    - loc-4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - L003
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - L002
+    - loc-7
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - L002
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - L004
+    - loc-9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - L004
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: robot_at
+    parameters:
+    - R001
+    - loc-1
+  plan:
+  - id: 
+    name: move
+    parameters:
+    - R001
+    - loc-1
+    - loc-3
+    startTime: -1
+    endTime: -1
+  - id: 
+    name: pickup
+    parameters:
+    - L001
+    - R001
+    - loc-3
+    startTime: -1
+    endTime: -1
+  - id: 
+    name: move
+    parameters:
+    - R001
+    - loc-3
+    - loc-4
+    startTime: -1
+    endTime: -1
+  - id: 
+    name: place_on
+    parameters:
+    - L001
+    - L003
+    - loc-4
+    - R001
+    startTime: -1
+    endTime: -1
+  - id: 
+    name: pickup
+    parameters:
+    - L003
+    - R001
+    - loc-4
+    startTime: -1
+    endTime: -1
+  - id: 
+    name: move
+    parameters:
+    - R001
+    - loc-4
+    - loc-7
+    startTime: -1
+    endTime: -1
+  - id: 
+    name: place_on
+    parameters:
+    - L003
+    - L002
+    - loc-7
+    - R001
+    startTime: -1
+    endTime: -1
+  - id: 
+    name: pickup
+    parameters:
+    - L002
+    - R001
+    - loc-7
+    startTime: -1
+    endTime: -1
+  - id: 
+    name: move
+    parameters:
+    - R001
+    - loc-7
+    - loc-9
+    startTime: -1
+    endTime: -1
+  - id: 
+    name: place_on
+    parameters:
+    - L002
+    - L004
+    - loc-9
+    - R001
+    startTime: -1
+    endTime: -1
