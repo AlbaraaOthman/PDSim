@@ -1,0 +1,3642 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26bf7a6cc511a7944ae3d20c7320e177, type: 3}
+  m_Name: PdSimInstance
+  m_EditorClassIdentifier: 
+  objects:
+  - name: loc_n5_n1_10
+    type: Location
+  - name: loc_n4_n2_9
+    type: Location
+  - name: loc_n4_n2_10
+    type: Location
+  - name: loc_n4_n2_11
+    type: Location
+  - name: loc_n4_n1_10
+    type: Location
+  - name: loc_n3_n2_9
+    type: Location
+  - name: loc_n3_n2_10
+    type: Location
+  - name: loc_n3_n1_4
+    type: Location
+  - name: loc_n3_0_2
+    type: Location
+  - name: loc_n3_1_1
+    type: Location
+  - name: loc_n2_n3_8
+    type: Location
+  - name: loc_n2_n3_11
+    type: Location
+  - name: loc_n2_0_1
+    type: Location
+  - name: loc_n2_0_2
+    type: Location
+  - name: loc_n2_0_3
+    type: Location
+  - name: loc_n2_1_0
+    type: Location
+  - name: loc_n2_1_1
+    type: Location
+  - name: loc_n2_2_0
+    type: Location
+  - name: loc_n1_n4_9
+    type: Location
+  - name: loc_n1_n2_5
+    type: Location
+  - name: loc_n1_n1_2
+    type: Location
+  - name: loc_n1_n1_3
+    type: Location
+  - name: loc_n1_0_1
+    type: Location
+  - name: loc_n1_0_2
+    type: Location
+  - name: loc_n1_0_3
+    type: Location
+  - name: loc_n1_1_0
+    type: Location
+  - name: loc_n1_1_1
+    type: Location
+  - name: loc_0_n5_9
+    type: Location
+  - name: loc_0_n4_6
+    type: Location
+  - name: loc_0_n3_4
+    type: Location
+  - name: loc_0_n3_5
+    type: Location
+  - name: loc_0_n2_2
+    type: Location
+  - name: loc_0_n2_4
+    type: Location
+  - name: loc_0_n1_3
+    type: Location
+  - name: loc_0_0_0
+    type: Location
+  - name: loc_1_n3_4
+    type: Location
+  - name: loc_1_n3_5
+    type: Location
+  - name: loc_1_n2_1
+    type: Location
+  - name: loc_1_n2_4
+    type: Location
+  - name: loc_2_n2_2
+    type: Location
+  - name: loc_2_n2_3
+    type: Location
+  - name: loc_2_2_0
+    type: Location
+  - name: loc_2_3_0
+    type: Location
+  - name: loc_3_n3_4
+    type: Location
+  - name: loc_3_n3_5
+    type: Location
+  - name: loc_3_n2_3
+    type: Location
+  - name: loc_3_n1_2
+    type: Location
+  - name: loc_3_n1_3
+    type: Location
+  - name: loc_3_1_0
+    type: Location
+  - name: loc_3_2_0
+    type: Location
+  - name: loc_3_3_0
+    type: Location
+  - name: loc_3_4_0
+    type: Location
+  - name: loc_4_n3_4
+    type: Location
+  - name: loc_4_n2_3
+    type: Location
+  - name: loc_4_n2_4
+    type: Location
+  - name: loc_4_n1_2
+    type: Location
+  - name: loc_4_0_1
+    type: Location
+  - name: loc_4_0_2
+    type: Location
+  - name: loc_4_3_0
+    type: Location
+  - name: loc_4_4_0
+    type: Location
+  - name: loc_5_n2_3
+    type: Location
+  - name: loc_5_n2_6
+    type: Location
+  - name: loc_5_0_2
+    type: Location
+  - name: loc_5_1_1
+    type: Location
+  - name: loc_5_1_2
+    type: Location
+  - name: loc_5_2_1
+    type: Location
+  - name: loc_6_n2_6
+    type: Location
+  - name: loc_6_n1_6
+    type: Location
+  - name: loc_6_1_2
+    type: Location
+  - name: loc_6_2_2
+    type: Location
+  - name: loc_7_n5_6
+    type: Location
+  - name: loc_7_n4_5
+    type: Location
+  - name: loc_7_n4_6
+    type: Location
+  - name: loc_7_n4_11
+    type: Location
+  - name: loc_7_n4_12
+    type: Location
+  - name: loc_7_n3_12
+    type: Location
+  - name: loc_7_n3_13
+    type: Location
+  - name: loc_7_n1_6
+    type: Location
+  - name: loc_8_n5_6
+    type: Location
+  - name: loc_8_n4_6
+    type: Location
+  - name: loc_8_n4_7
+    type: Location
+  - name: loc_8_n3_8
+    type: Location
+  - name: loc_8_n3_10
+    type: Location
+  - name: loc_8_n3_11
+    type: Location
+  - name: loc_8_n3_12
+    type: Location
+  - name: loc_8_n3_13
+    type: Location
+  - name: loc_8_n3_14
+    type: Location
+  - name: loc_8_n2_7
+    type: Location
+  - name: loc_8_n2_13
+    type: Location
+  - name: loc_9_n4_7
+    type: Location
+  - name: loc_9_n4_8
+    type: Location
+  - name: loc_9_n2_8
+    type: Location
+  - name: loc_9_n1_7
+    type: Location
+  - name: loc_9_n1_8
+    type: Location
+  - name: loc_9_n1_9
+    type: Location
+  - name: loc_10_n4_7
+    type: Location
+  - name: loc_10_n4_8
+    type: Location
+  - name: loc_10_n3_6
+    type: Location
+  - name: loc_10_n1_9
+    type: Location
+  - name: loc_10_0_9
+    type: Location
+  - name: loc_10_0_10
+    type: Location
+  - name: loc_10_1_9
+    type: Location
+  - name: loc_10_1_10
+    type: Location
+  - name: loc_11_n4_8
+    type: Location
+  - name: loc_11_n3_8
+    type: Location
+  - name: loc_11_1_10
+    type: Location
+  - name: b-0
+    type: Bricks
+  - name: b-1
+    type: Bricks
+  - name: b-2
+    type: Bricks
+  - name: b-3
+    type: Bricks
+  - name: b-4
+    type: Bricks
+  - name: b-5
+    type: Bricks
+  - name: b-6
+    type: Bricks
+  - name: b-7
+    type: Bricks
+  - name: b-8
+    type: Bricks
+  - name: b-9
+    type: Bricks
+  - name: b-10
+    type: Bricks
+  - name: b-11
+    type: Bricks
+  - name: b-12
+    type: Bricks
+  - name: b-13
+    type: Bricks
+  - name: b-14
+    type: Bricks
+  - name: b-15
+    type: Bricks
+  - name: b-16
+    type: Bricks
+  - name: b-17
+    type: Bricks
+  - name: b-18
+    type: Bricks
+  - name: b-19
+    type: Bricks
+  - name: b-20
+    type: Bricks
+  - name: b-21
+    type: Bricks
+  - name: b-22
+    type: Bricks
+  - name: b-23
+    type: Bricks
+  - name: b-24
+    type: Bricks
+  - name: b-25
+    type: Bricks
+  - name: b-26
+    type: Bricks
+  - name: b-27
+    type: Bricks
+  - name: b-28
+    type: Bricks
+  - name: b-29
+    type: Bricks
+  - name: b-30
+    type: Bricks
+  - name: b-31
+    type: Bricks
+  - name: b-32
+    type: Bricks
+  - name: b-33
+    type: Bricks
+  - name: b-34
+    type: Bricks
+  - name: b-35
+    type: Bricks
+  - name: b-36
+    type: Bricks
+  - name: b-37
+    type: Bricks
+  - name: b-38
+    type: Bricks
+  - name: b-39
+    type: Bricks
+  - name: b-40
+    type: Bricks
+  - name: b-41
+    type: Bricks
+  - name: b-42
+    type: Bricks
+  - name: b-43
+    type: Bricks
+  - name: b-44
+    type: Bricks
+  - name: b-45
+    type: Bricks
+  - name: b-46
+    type: Bricks
+  - name: b-47
+    type: Bricks
+  - name: b-48
+    type: Bricks
+  - name: b-49
+    type: Bricks
+  - name: b-50
+    type: Bricks
+  - name: b-51
+    type: Bricks
+  - name: b-52
+    type: Bricks
+  - name: b-53
+    type: Bricks
+  - name: b-54
+    type: Bricks
+  - name: b-55
+    type: Bricks
+  - name: b-56
+    type: Bricks
+  - name: b-57
+    type: Bricks
+  - name: b-58
+    type: Bricks
+  - name: b-59
+    type: Bricks
+  - name: b-60
+    type: Bricks
+  - name: b-61
+    type: Bricks
+  - name: b-62
+    type: Bricks
+  - name: b-63
+    type: Bricks
+  - name: b-64
+    type: Bricks
+  - name: b-65
+    type: Bricks
+  - name: b-66
+    type: Bricks
+  - name: b-67
+    type: Bricks
+  - name: b-68
+    type: Bricks
+  - name: b-69
+    type: Bricks
+  - name: b-70
+    type: Bricks
+  - name: b-71
+    type: Bricks
+  - name: b-72
+    type: Bricks
+  - name: b-73
+    type: Bricks
+  - name: b-74
+    type: Bricks
+  - name: b-75
+    type: Bricks
+  - name: b-76
+    type: Bricks
+  - name: b-77
+    type: Bricks
+  - name: b-78
+    type: Bricks
+  - name: b-79
+    type: Bricks
+  - name: b-80
+    type: Bricks
+  - name: b-81
+    type: Bricks
+  - name: b-82
+    type: Bricks
+  - name: b-83
+    type: Bricks
+  - name: b-84
+    type: Bricks
+  - name: b-85
+    type: Bricks
+  - name: b-86
+    type: Bricks
+  - name: b-87
+    type: Bricks
+  - name: b-88
+    type: Bricks
+  - name: b-89
+    type: Bricks
+  - name: b-90
+    type: Bricks
+  - name: b-91
+    type: Bricks
+  - name: b-92
+    type: Bricks
+  - name: b-93
+    type: Bricks
+  - name: b-94
+    type: Bricks
+  - name: b-95
+    type: Bricks
+  - name: b-96
+    type: Bricks
+  - name: b-97
+    type: Bricks
+  - name: b-98
+    type: Bricks
+  - name: b-99
+    type: Bricks
+  - name: b-100
+    type: Bricks
+  - name: b-101
+    type: Bricks
+  - name: b-102
+    type: Bricks
+  - name: b-103
+    type: Bricks
+  - name: b-104
+    type: Bricks
+  - name: b-105
+    type: Bricks
+  - name: b-106
+    type: Bricks
+  - name: b-107
+    type: Bricks
+  - name: b-108
+    type: Bricks
+  - name: b-109
+    type: Bricks
+  - name: b-110
+    type: Bricks
+  - name: b-111
+    type: Bricks
+  - name: b-112
+    type: Bricks
+  - name: b-113
+    type: Bricks
+  - name: b-114
+    type: Bricks
+  - name: b-115
+    type: Bricks
+  - name: b-116
+    type: Bricks
+  - name: b-117
+    type: Bricks
+  - name: b-118
+    type: Bricks
+  - name: b-119
+    type: Bricks
+  - name: b-120
+    type: Bricks
+  - name: b-121
+    type: Bricks
+  - name: b-122
+    type: Bricks
+  - name: b-123
+    type: Bricks
+  - name: b-124
+    type: Bricks
+  - name: b-125
+    type: Bricks
+  - name: b-126
+    type: Bricks
+  - name: b-127
+    type: Bricks
+  - name: b-128
+    type: Bricks
+  - name: b-129
+    type: Bricks
+  - name: b-130
+    type: Bricks
+  - name: b-131
+    type: Bricks
+  - name: b-132
+    type: Bricks
+  - name: b-133
+    type: Bricks
+  - name: b-134
+    type: Bricks
+  - name: b-135
+    type: Bricks
+  - name: b-136
+    type: Bricks
+  - name: b-137
+    type: Bricks
+  - name: b-138
+    type: Bricks
+  - name: b-139
+    type: Bricks
+  - name: b-140
+    type: Bricks
+  - name: b-141
+    type: Bricks
+  - name: b-142
+    type: Bricks
+  - name: b-143
+    type: Bricks
+  - name: b-144
+    type: Bricks
+  - name: b-145
+    type: Bricks
+  - name: b-146
+    type: Bricks
+  - name: b-147
+    type: Bricks
+  - name: b-148
+    type: Bricks
+  - name: b-149
+    type: Bricks
+  - name: b-150
+    type: Bricks
+  - name: b-151
+    type: Bricks
+  - name: b-152
+    type: Bricks
+  - name: b-153
+    type: Bricks
+  - name: b-154
+    type: Bricks
+  - name: b-155
+    type: Bricks
+  - name: b-156
+    type: Bricks
+  - name: b-157
+    type: Bricks
+  - name: b-158
+    type: Bricks
+  - name: b-159
+    type: Bricks
+  - name: b-160
+    type: Bricks
+  - name: b-161
+    type: Bricks
+  - name: b-162
+    type: Bricks
+  - name: b-163
+    type: Bricks
+  - name: b-164
+    type: Bricks
+  - name: b-165
+    type: Bricks
+  - name: b-166
+    type: Bricks
+  - name: b-167
+    type: Bricks
+  - name: b-168
+    type: Bricks
+  - name: b-169
+    type: Bricks
+  - name: b-170
+    type: Bricks
+  - name: b-171
+    type: Bricks
+  - name: b-172
+    type: Bricks
+  - name: b-173
+    type: Bricks
+  - name: b-174
+    type: Bricks
+  - name: b-175
+    type: Bricks
+  - name: b-176
+    type: Bricks
+  - name: b-177
+    type: Bricks
+  - name: b-178
+    type: Bricks
+  - name: b-179
+    type: Bricks
+  - name: b-180
+    type: Bricks
+  - name: b-181
+    type: Bricks
+  - name: b-182
+    type: Bricks
+  - name: b-183
+    type: Bricks
+  - name: b-184
+    type: Bricks
+  - name: b-185
+    type: Bricks
+  - name: b-186
+    type: Bricks
+  - name: b-187
+    type: Bricks
+  - name: b-188
+    type: Bricks
+  - name: b-189
+    type: Bricks
+  - name: b-190
+    type: Bricks
+  - name: b-191
+    type: Bricks
+  - name: b-192
+    type: Bricks
+  - name: b-193
+    type: Bricks
+  - name: b-194
+    type: Bricks
+  - name: b-195
+    type: Bricks
+  - name: b-196
+    type: Bricks
+  - name: b-197
+    type: Bricks
+  - name: b-198
+    type: Bricks
+  - name: b-199
+    type: Bricks
+  - name: b-200
+    type: Bricks
+  - name: b-201
+    type: Bricks
+  - name: b-202
+    type: Bricks
+  - name: b-203
+    type: Bricks
+  - name: b-204
+    type: Bricks
+  - name: b-205
+    type: Bricks
+  - name: b-206
+    type: Bricks
+  - name: b-207
+    type: Bricks
+  - name: b-208
+    type: Bricks
+  - name: b-209
+    type: Bricks
+  - name: b-210
+    type: Bricks
+  - name: b-211
+    type: Bricks
+  - name: b-212
+    type: Bricks
+  - name: b-213
+    type: Bricks
+  - name: b-214
+    type: Bricks
+  - name: b-215
+    type: Bricks
+  - name: b-216
+    type: Bricks
+  - name: b-217
+    type: Bricks
+  - name: b-218
+    type: Bricks
+  - name: b-219
+    type: Bricks
+  - name: b-220
+    type: Bricks
+  - name: b-221
+    type: Bricks
+  - name: b-222
+    type: Bricks
+  - name: b-223
+    type: Bricks
+  - name: b-224
+    type: Bricks
+  - name: b-225
+    type: Bricks
+  - name: b-226
+    type: Bricks
+  init:
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-0
+    - loc_2_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-1
+    - loc_3_4_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-2
+    - loc_4_4_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-3
+    - loc_4_4_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-4
+    - loc_4_4_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-5
+    - loc_3_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-5
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-6
+    - loc_3_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-7
+    - loc_4_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-7
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-8
+    - loc_2_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-9
+    - loc_3_2_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-10
+    - loc_4_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-11
+    - loc_4_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-11
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-12
+    - loc_3_1_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-12
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-13
+    - loc_3_4_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-13
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-14
+    - loc_3_4_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-14
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-15
+    - loc_3_2_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-15
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-16
+    - loc_3_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-16
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-17
+    - loc_4_4_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-17
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-18
+    - loc_3_4_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-18
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-19
+    - loc_3_1_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-19
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-20
+    - loc_2_2_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-20
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-21
+    - loc_3_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-21
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-22
+    - loc_2_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-22
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-23
+    - loc_3_2_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-23
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-24
+    - loc_3_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-24
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-25
+    - loc_3_2_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-25
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-26
+    - loc_0_0_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-26
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-27
+    - loc_3_4_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-27
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-28
+    - loc_3_1_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-28
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-29
+    - loc_3_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-29
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-30
+    - loc_2_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-30
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-31
+    - loc_3_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-31
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-32
+    - loc_3_2_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-32
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-33
+    - loc_3_2_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-33
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-34
+    - loc_3_3_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-34
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-35
+    - loc_8_n3_11
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-35
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-36
+    - loc_8_n3_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-36
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-37
+    - loc_7_n4_11
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-37
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-38
+    - loc_8_n3_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-38
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-39
+    - loc_8_n3_12
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-39
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-40
+    - loc_8_n3_14
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-40
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-41
+    - loc_7_n3_12
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-41
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-42
+    - loc_8_n3_11
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-42
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-43
+    - loc_8_n2_13
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-43
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-44
+    - loc_7_n4_12
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-44
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-45
+    - loc_8_n3_13
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-45
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-46
+    - loc_8_n3_12
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-46
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-47
+    - loc_7_n3_12
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-47
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-48
+    - loc_8_n3_14
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-48
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-49
+    - loc_8_n2_13
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-49
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-50
+    - loc_8_n3_12
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-50
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-51
+    - loc_8_n3_13
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-51
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-52
+    - loc_8_n3_13
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-52
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-53
+    - loc_7_n3_12
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-53
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-54
+    - loc_7_n3_13
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-54
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-55
+    - loc_7_n3_13
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-55
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-56
+    - loc_7_n3_13
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-56
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-57
+    - loc_8_n3_13
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-57
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-58
+    - loc_7_n4_11
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-58
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-59
+    - loc_n1_n4_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-59
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-60
+    - loc_n2_n3_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-60
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-61
+    - loc_n4_n1_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-61
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-62
+    - loc_n4_n2_11
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-62
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-63
+    - loc_n4_n2_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-63
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-64
+    - loc_n3_n2_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-64
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-65
+    - loc_0_n5_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-65
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-66
+    - loc_n4_n1_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-66
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-67
+    - loc_n3_n2_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-67
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-68
+    - loc_n3_n2_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-68
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-69
+    - loc_n4_n1_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-69
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-70
+    - loc_n4_n1_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-70
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-71
+    - loc_n3_n2_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-71
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-72
+    - loc_n4_n2_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-72
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-73
+    - loc_n2_n3_11
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-73
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-74
+    - loc_n5_n1_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-74
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-75
+    - loc_n3_n2_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-75
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-76
+    - loc_n4_n1_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-76
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-77
+    - loc_n3_n2_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-77
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-78
+    - loc_n4_n2_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-78
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-79
+    - loc_n3_n2_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-79
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-80
+    - loc_n4_n2_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-80
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-81
+    - loc_n2_2_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-81
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-82
+    - loc_n2_2_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-82
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-83
+    - loc_n3_1_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-83
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-84
+    - loc_n2_2_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-84
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-85
+    - loc_n2_0_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-85
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-86
+    - loc_n1_0_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-86
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-87
+    - loc_n2_1_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-87
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-88
+    - loc_n1_0_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-88
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-89
+    - loc_n3_0_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-89
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-90
+    - loc_n1_0_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-90
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-91
+    - loc_0_n2_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-91
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-92
+    - loc_0_n2_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-92
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-93
+    - loc_0_n2_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-93
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-94
+    - loc_n1_1_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-94
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-95
+    - loc_n2_1_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-95
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-96
+    - loc_n2_2_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-96
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-97
+    - loc_n1_0_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-97
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-98
+    - loc_0_n2_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-98
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-99
+    - loc_n1_0_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-99
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-100
+    - loc_n3_1_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-100
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-101
+    - loc_n1_n1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-101
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-102
+    - loc_n1_0_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-102
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-103
+    - loc_n2_0_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-103
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-104
+    - loc_n1_1_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-104
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-105
+    - loc_n2_0_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-105
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-106
+    - loc_n1_1_0
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-106
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-107
+    - loc_n1_n1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-107
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-108
+    - loc_n2_1_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-108
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-109
+    - loc_n1_0_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-109
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-110
+    - loc_n1_1_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-110
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-111
+    - loc_n1_n1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-111
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-112
+    - loc_n2_0_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-112
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-113
+    - loc_n1_0_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-113
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-114
+    - loc_n1_0_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-114
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-115
+    - loc_3_n3_4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-115
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-116
+    - loc_2_n2_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-116
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-117
+    - loc_4_n3_4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-117
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-118
+    - loc_4_n2_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-118
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-119
+    - loc_4_n1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-119
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-120
+    - loc_3_n1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-120
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-121
+    - loc_4_n2_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-121
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-122
+    - loc_4_n2_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-122
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-123
+    - loc_5_n2_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-123
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-124
+    - loc_3_n1_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-124
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-125
+    - loc_3_n1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-125
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-126
+    - loc_3_n2_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-126
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-127
+    - loc_4_n2_4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-127
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-128
+    - loc_3_n1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-128
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-129
+    - loc_4_n3_4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-129
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-130
+    - loc_3_n2_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-130
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-131
+    - loc_4_n1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-131
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-132
+    - loc_4_0_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-132
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-133
+    - loc_4_n2_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-133
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-134
+    - loc_3_n2_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-134
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-135
+    - loc_4_n1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-135
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-136
+    - loc_4_n1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-136
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-137
+    - loc_n1_n2_5
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-137
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-138
+    - loc_n3_n1_4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-138
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-139
+    - loc_n1_0_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-139
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-140
+    - loc_0_n3_5
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-140
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-141
+    - loc_1_n2_4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-141
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-142
+    - loc_n1_n1_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-142
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-143
+    - loc_0_n1_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-143
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-144
+    - loc_0_n2_4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-144
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-145
+    - loc_n1_n1_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-145
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-146
+    - loc_1_n3_4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-146
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-147
+    - loc_1_n3_5
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-147
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-148
+    - loc_0_n4_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-148
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-149
+    - loc_0_n2_4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-149
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-150
+    - loc_n2_0_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-150
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-151
+    - loc_n2_0_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-151
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-152
+    - loc_0_n2_4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-152
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-153
+    - loc_0_n3_4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-153
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-154
+    - loc_n1_0_3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-154
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-155
+    - loc_2_n2_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-155
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-156
+    - loc_5_2_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-156
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-157
+    - loc_1_n2_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-157
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-158
+    - loc_5_1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-158
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-159
+    - loc_4_0_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-159
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-160
+    - loc_6_2_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-160
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-161
+    - loc_1_n2_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-161
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-162
+    - loc_5_0_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-162
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-163
+    - loc_6_2_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-163
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-164
+    - loc_6_1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-164
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-165
+    - loc_5_1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-165
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-166
+    - loc_5_1_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-166
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-167
+    - loc_4_0_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-167
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-168
+    - loc_5_1_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-168
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-169
+    - loc_6_2_2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-169
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-170
+    - loc_10_n3_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-170
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-171
+    - loc_10_n4_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-171
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-172
+    - loc_8_n4_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-172
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-173
+    - loc_11_n4_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-173
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-174
+    - loc_7_n5_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-174
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-175
+    - loc_8_n5_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-175
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-176
+    - loc_7_n5_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-176
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-177
+    - loc_10_n4_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-177
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-178
+    - loc_11_n4_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-178
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-179
+    - loc_9_n4_7
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-179
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-180
+    - loc_10_n4_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-180
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-181
+    - loc_7_n4_5
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-181
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-182
+    - loc_9_n4_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-182
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-183
+    - loc_7_n4_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-183
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-184
+    - loc_9_n4_7
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-184
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-185
+    - loc_8_n4_7
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-185
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-186
+    - loc_8_n4_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-186
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-187
+    - loc_10_n4_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-187
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-188
+    - loc_11_n3_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-188
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-189
+    - loc_8_n4_7
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-189
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-190
+    - loc_10_n4_7
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-190
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-191
+    - loc_9_n4_7
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-191
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-192
+    - loc_4_n2_4
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-192
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-193
+    - loc_3_n3_5
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-193
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-194
+    - loc_6_n2_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-194
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-195
+    - loc_7_n1_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-195
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-196
+    - loc_6_n2_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-196
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-197
+    - loc_7_n1_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-197
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-198
+    - loc_6_n2_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-198
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-199
+    - loc_6_n1_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-199
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-200
+    - loc_5_n2_6
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-200
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-201
+    - loc_11_1_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-201
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-202
+    - loc_10_1_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-202
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-203
+    - loc_10_0_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-203
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-204
+    - loc_10_0_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-204
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-205
+    - loc_10_1_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-205
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-206
+    - loc_10_0_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-206
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-207
+    - loc_10_0_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-207
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-208
+    - loc_9_n1_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-208
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-209
+    - loc_9_n1_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-209
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-210
+    - loc_11_1_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-210
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-211
+    - loc_10_0_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-211
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-212
+    - loc_10_0_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-212
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-213
+    - loc_8_n2_7
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-213
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-214
+    - loc_9_n1_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-214
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-215
+    - loc_10_0_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-215
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-216
+    - loc_9_n1_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-216
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-217
+    - loc_10_0_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-217
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-218
+    - loc_10_0_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-218
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-219
+    - loc_10_0_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-219
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-220
+    - loc_9_n2_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-220
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-221
+    - loc_10_n1_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-221
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-222
+    - loc_9_n1_8
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-222
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-223
+    - loc_10_0_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-223
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-224
+    - loc_9_n1_7
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-224
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-225
+    - loc_9_n1_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-225
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - b-226
+    - loc_10_0_9
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - b-226
+  plan:
+  - id: 
+    name: move
+    parameters:
+    - b-4
+    - loc_4_4_0
+    - loc_n4_n2_11
+    startTime: -1
+    endTime: -1
