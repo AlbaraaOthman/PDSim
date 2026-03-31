@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82bf94bd81663e5ea88fffcb1554d4c, type: 3}
+  m_Name: PdSimProblem
+  m_EditorClassIdentifier: 
+  domainName: 3DSceneRecreation_domain
+  problemName: 3DSceneRecreation
+  features:
+  - FlatTyping
+  - ActionBased
+  typesDeclaration:
+    serializableTypeNodes:
+    - name: object
+      childrenCount: 5
+      indexFirstChild: 1
+    - name: Bricks
+      childrenCount: 0
+      indexFirstChild: 2
+    - name: Location
+      childrenCount: 0
+      indexFirstChild: 3
+    - name: Size
+      childrenCount: 0
+      indexFirstChild: 4
+    - name: Colour
+      childrenCount: 0
+      indexFirstChild: 5
+    - name: Label
+      childrenCount: 0
+      indexFirstChild: 6
+  fluents:
+  - name: brick_at
+    type: 3
+    parameters:
+    - name: b
+      type: Bricks
+    - name: l
+      type: Location
+  - name: brick_dimensions
+    type: 3
+    parameters:
+    - name: b
+      type: Bricks
+    - name: h
+      type: Size
+  - name: brick_colour
+    type: 3
+    parameters:
+    - name: b
+      type: Bricks
+    - name: c
+      type: Colour
+  - name: brick_label
+    type: 3
+    parameters:
+    - name: b
+      type: Bricks
+    - name: la
+      type: Label
+  - name: on
+    type: 3
+    parameters:
+    - name: stack_brick
+      type: Bricks
+    - name: base_brick
+      type: Bricks
+  - name: clear
+    type: 3
+    parameters:
+    - name: brick
+      type: Bricks
+  - name: stacked
+    type: 3
+    parameters:
+    - name: brick
+      type: Bricks
+  instantaneousActions:
+  - name: move
+    parameters:
+    - name: brick
+      type: Bricks
+    - name: l_from
+      type: Location
+    - name: l_to
+      type: Location
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: brick_at
+        parameters:
+        - brick
+        - l_from
+      actionParametersMap: 0000000001000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: brick_at
+        parameters:
+        - brick
+        - l_to
+      actionParametersMap: 0000000002000000
+      effectKind: 1
+  - name: move_on
+    parameters:
+    - name: stack_brick
+      type: Bricks
+    - name: base_brick
+      type: Bricks
+    - name: l_curr
+      type: Location
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: on
+        parameters:
+        - stack_brick
+        - base_brick
+      actionParametersMap: 0000000001000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: clear
+        parameters:
+        - base_brick
+      actionParametersMap: 01000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: stacked
+        parameters:
+        - base_brick
+      actionParametersMap: 01000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: stacked
+        parameters:
+        - stack_brick
+      actionParametersMap: 00000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: stacked
+        parameters:
+        - stack_brick
+      actionParametersMap: 00000000
+      effectKind: 1
+  - name: move_off
+    parameters:
+    - name: base_brick
+      type: Bricks
+    - name: stack_brick
+      type: Bricks
+    - name: l_curr
+      type: Location
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: on
+        parameters:
+        - stack_brick
+        - base_brick
+      actionParametersMap: 0100000000000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: clear
+        parameters:
+        - base_brick
+      actionParametersMap: 00000000
+      effectKind: 1
+  durativeActions: []
