@@ -1,0 +1,290 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82bf94bd81663e5ea88fffcb1554d4c, type: 3}
+  m_Name: PdSimProblem
+  m_EditorClassIdentifier: 
+  domainName: GamePrototype_domain
+  problemName: GamePrototype
+  features:
+  - FlatTyping
+  - ActionBased
+  typesDeclaration:
+    serializableTypeNodes:
+    - name: object
+      childrenCount: 8
+      indexFirstChild: 1
+    - name: block
+      childrenCount: 0
+      indexFirstChild: 2
+    - name: location
+      childrenCount: 0
+      indexFirstChild: 3
+    - name: player
+      childrenCount: 0
+      indexFirstChild: 4
+    - name: level
+      childrenCount: 0
+      indexFirstChild: 5
+    - name: boss
+      childrenCount: 0
+      indexFirstChild: 6
+    - name: size
+      childrenCount: 0
+      indexFirstChild: 7
+    - name: colour
+      childrenCount: 0
+      indexFirstChild: 8
+    - name: label
+      childrenCount: 0
+      indexFirstChild: 9
+  fluents:
+  - name: block_at
+    type: 3
+    parameters:
+    - name: b
+      type: block
+    - name: l
+      type: location
+  - name: player_at
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: location
+  - name: level_at
+    type: 3
+    parameters:
+    - name: l
+      type: level
+    - name: o
+      type: location
+  - name: boss_at
+    type: 3
+    parameters:
+    - name: b
+      type: boss
+    - name: l
+      type: location
+  - name: block_size
+    type: 3
+    parameters:
+    - name: b
+      type: block
+    - name: s
+      type: size
+  - name: player_size
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: s
+      type: size
+  - name: level_size
+    type: 3
+    parameters:
+    - name: l
+      type: level
+    - name: s
+      type: size
+  - name: boss_size
+    type: 3
+    parameters:
+    - name: b
+      type: boss
+    - name: s
+      type: size
+  - name: block_colour
+    type: 3
+    parameters:
+    - name: b
+      type: block
+    - name: c
+      type: colour
+  - name: player_colour
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: c
+      type: colour
+  - name: level_colour
+    type: 3
+    parameters:
+    - name: l
+      type: level
+    - name: c
+      type: colour
+  - name: boss_colour
+    type: 3
+    parameters:
+    - name: b
+      type: boss
+    - name: c
+      type: colour
+  - name: block_label
+    type: 3
+    parameters:
+    - name: b
+      type: block
+    - name: l
+      type: label
+  - name: player_label
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: label
+  - name: level_label
+    type: 3
+    parameters:
+    - name: l
+      type: level
+    - name: a
+      type: label
+  - name: boss_label
+    type: 3
+    parameters:
+    - name: b
+      type: boss
+    - name: l
+      type: label
+  - name: next
+    type: 3
+    parameters:
+    - name: b1
+      type: block
+    - name: b2
+      type: block
+  - name: blockLevel
+    type: 3
+    parameters:
+    - name: b3
+      type: block
+    - name: l1
+      type: level
+  - name: playerLevel
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: l2
+      type: level
+  - name: playerOn
+    type: 3
+    parameters:
+    - name: p1
+      type: player
+    - name: b4
+      type: block
+  - name: bossLevel
+    type: 3
+    parameters:
+    - name: b5
+      type: boss
+    - name: l3
+      type: level
+  - name: bossOn
+    type: 3
+    parameters:
+    - name: b6
+      type: boss
+    - name: b7
+      type: block
+  - name: defeated
+    type: 3
+    parameters:
+    - name: b8
+      type: boss
+  instantaneousActions:
+  - name: moveRight
+    parameters:
+    - name: p
+      type: player
+    - name: b
+      type: block
+    - name: l
+      type: block
+    - name: e
+      type: level
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: playerOn
+        parameters:
+        - p
+        - b
+      actionParametersMap: 0000000001000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: playerOn
+        parameters:
+        - p
+        - l
+      actionParametersMap: 0000000002000000
+      effectKind: 1
+  - name: jump
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: level
+    - name: e
+      type: level
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: playerLevel
+        parameters:
+        - p
+        - l
+      actionParametersMap: 0000000001000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: playerLevel
+        parameters:
+        - p
+        - e
+      actionParametersMap: 0000000002000000
+      effectKind: 1
+  - name: jumpOnBoss
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: level
+    - name: b
+      type: boss
+    - name: o
+      type: block
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: defeated
+        parameters:
+        - b
+      actionParametersMap: 02000000
+      effectKind: 1
+  durativeActions: []

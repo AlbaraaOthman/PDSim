@@ -1,0 +1,227 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82bf94bd81663e5ea88fffcb1554d4c, type: 3}
+  m_Name: PdSimProblem
+  m_EditorClassIdentifier: 
+  domainName: GamePrototype_domain
+  problemName: GamePrototype
+  features:
+  - ActionBased
+  - FlatTyping
+  typesDeclaration:
+    serializableTypeNodes:
+    - name: object
+      childrenCount: 6
+      indexFirstChild: 1
+    - name: object
+      childrenCount: 0
+      indexFirstChild: 2
+    - name: location
+      childrenCount: 0
+      indexFirstChild: 3
+    - name: player
+      childrenCount: 0
+      indexFirstChild: 4
+    - name: size
+      childrenCount: 0
+      indexFirstChild: 5
+    - name: colour
+      childrenCount: 0
+      indexFirstChild: 6
+    - name: label
+      childrenCount: 0
+      indexFirstChild: 7
+  fluents:
+  - name: object_at
+    type: 3
+    parameters:
+    - name: o
+      type: object
+    - name: l
+      type: location
+  - name: player_at
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: location
+  - name: object_size
+    type: 3
+    parameters:
+    - name: o
+      type: object
+    - name: s
+      type: size
+  - name: player_size
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: s
+      type: size
+  - name: object_colour
+    type: 3
+    parameters:
+    - name: o
+      type: object
+    - name: c
+      type: colour
+  - name: player_colour
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: c
+      type: colour
+  - name: object_label
+    type: 3
+    parameters:
+    - name: o
+      type: object
+    - name: l
+      type: label
+  - name: player_label
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: label
+  - name: holding
+    type: 3
+    parameters:
+    - name: a
+      type: player
+    - name: o
+      type: object
+  - name: on
+    type: 3
+    parameters:
+    - name: b
+      type: object
+    - name: j
+      type: object
+  - name: clear
+    type: 3
+    parameters:
+    - name: e
+      type: object
+  instantaneousActions:
+  - name: move
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: location
+    - name: o
+      type: location
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: player_at
+        parameters:
+        - p
+        - l
+      actionParametersMap: 0000000001000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: player_at
+        parameters:
+        - p
+        - o
+      actionParametersMap: 0000000002000000
+      effectKind: 1
+  - name: pick
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: location
+    - name: o
+      type: object
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: object_at
+        parameters:
+        - o
+        - l
+      actionParametersMap: 0200000001000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: holding
+        parameters:
+        - p
+        - o
+      actionParametersMap: 0000000002000000
+      effectKind: 1
+  - name: place_on
+    parameters:
+    - name: p
+      type: player
+    - name: o
+      type: object
+    - name: b
+      type: object
+    - name: l
+      type: location
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: holding
+        parameters:
+        - p
+        - o
+      actionParametersMap: 0000000001000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: object_at
+        parameters:
+        - o
+        - l
+      actionParametersMap: 0100000003000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: clear
+        parameters:
+        - o
+      actionParametersMap: 01000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: clear
+        parameters:
+        - b
+      actionParametersMap: 02000000
+      effectKind: 1
+  durativeActions: []

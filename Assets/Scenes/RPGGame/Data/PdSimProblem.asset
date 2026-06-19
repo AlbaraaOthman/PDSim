@@ -1,0 +1,330 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82bf94bd81663e5ea88fffcb1554d4c, type: 3}
+  m_Name: PdSimProblem
+  m_EditorClassIdentifier: 
+  domainName: GamePrototype_domain
+  problemName: GamePrototype
+  features:
+  - FlatTyping
+  - ActionBased
+  typesDeclaration:
+    serializableTypeNodes:
+    - name: object
+      childrenCount: 8
+      indexFirstChild: 1
+    - name: static
+      childrenCount: 0
+      indexFirstChild: 2
+    - name: location
+      childrenCount: 0
+      indexFirstChild: 3
+    - name: moveable
+      childrenCount: 0
+      indexFirstChild: 4
+    - name: player
+      childrenCount: 0
+      indexFirstChild: 5
+    - name: cleaner
+      childrenCount: 0
+      indexFirstChild: 6
+    - name: size
+      childrenCount: 0
+      indexFirstChild: 7
+    - name: colour
+      childrenCount: 0
+      indexFirstChild: 8
+    - name: label
+      childrenCount: 0
+      indexFirstChild: 9
+  fluents:
+  - name: static_at
+    type: 3
+    parameters:
+    - name: s
+      type: static
+    - name: l
+      type: location
+  - name: moveable_at
+    type: 3
+    parameters:
+    - name: m
+      type: moveable
+    - name: l
+      type: location
+  - name: player_at
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: location
+  - name: cleaner_at
+    type: 3
+    parameters:
+    - name: c
+      type: cleaner
+    - name: l
+      type: location
+  - name: static_size
+    type: 3
+    parameters:
+    - name: s
+      type: static
+    - name: i
+      type: size
+  - name: moveable_size
+    type: 3
+    parameters:
+    - name: m
+      type: moveable
+    - name: s
+      type: size
+  - name: player_size
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: s
+      type: size
+  - name: cleaner_size
+    type: 3
+    parameters:
+    - name: c
+      type: cleaner
+    - name: s
+      type: size
+  - name: static_colour
+    type: 3
+    parameters:
+    - name: s
+      type: static
+    - name: c
+      type: colour
+  - name: moveable_colour
+    type: 3
+    parameters:
+    - name: m
+      type: moveable
+    - name: c
+      type: colour
+  - name: player_colour
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: c
+      type: colour
+  - name: cleaner_colour
+    type: 3
+    parameters:
+    - name: c
+      type: cleaner
+    - name: o
+      type: colour
+  - name: static_label
+    type: 3
+    parameters:
+    - name: s
+      type: static
+    - name: l
+      type: label
+  - name: moveable_label
+    type: 3
+    parameters:
+    - name: m
+      type: moveable
+    - name: l
+      type: label
+  - name: player_label
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: label
+  - name: cleaner_label
+    type: 3
+    parameters:
+    - name: c
+      type: cleaner
+    - name: l
+      type: label
+  - name: oiled
+    type: 3
+    parameters:
+    - name: o
+      type: location
+  - name: holding
+    type: 3
+    parameters:
+    - name: p
+      type: player
+    - name: m
+      type: moveable
+  - name: hascleaner
+    type: 3
+    parameters:
+    - name: a
+      type: player
+    - name: e
+      type: cleaner
+  - name: cleaned
+    type: 3
+    parameters:
+    - name: t
+      type: location
+  instantaneousActions:
+  - name: pick
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: location
+    - name: m
+      type: moveable
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: moveable_at
+        parameters:
+        - m
+        - l
+      actionParametersMap: 0200000001000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: holding
+        parameters:
+        - p
+        - m
+      actionParametersMap: 0000000002000000
+      effectKind: 1
+  - name: place
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: location
+    - name: m
+      type: moveable
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: holding
+        parameters:
+        - p
+        - m
+      actionParametersMap: 0000000002000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: moveable_at
+        parameters:
+        - m
+        - l
+      actionParametersMap: 0200000001000000
+      effectKind: 1
+  - name: pickclean
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: location
+    - name: c
+      type: cleaner
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: cleaner_at
+        parameters:
+        - c
+        - l
+      actionParametersMap: 0200000001000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: hascleaner
+        parameters:
+        - p
+        - c
+      actionParametersMap: 0000000002000000
+      effectKind: 1
+  - name: move
+    parameters:
+    - name: p
+      type: player
+    - name: l
+      type: location
+    - name: o
+      type: location
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: player_at
+        parameters:
+        - p
+        - l
+      actionParametersMap: 0000000001000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: player_at
+        parameters:
+        - p
+        - o
+      actionParametersMap: 0000000002000000
+      effectKind: 1
+  - name: clean
+    parameters:
+    - name: p
+      type: player
+    - name: c
+      type: cleaner
+    - name: l
+      type: location
+    effects:
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: False
+        fluentName: oiled
+        parameters:
+        - l
+      actionParametersMap: 02000000
+      effectKind: 1
+    - fluentAssignment:
+        value:
+          contentCase: 4
+          valueSymbol: True
+        fluentName: cleaned
+        parameters:
+        - l
+      actionParametersMap: 02000000
+      effectKind: 1
+  durativeActions: []
