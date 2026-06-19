@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: objectType
       value: boss
       objectReference: {fileID: 0}
+    - target: {fileID: 2213718738807233056, guid: 795d540cba09572438081a3f19f29dfa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.488
+      objectReference: {fileID: 0}
     - target: {fileID: 4435292698034127583, guid: 795d540cba09572438081a3f19f29dfa, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -67,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 4564599111297541847, guid: 795d540cba09572438081a3f19f29dfa, type: 3}
       propertyPath: m_Name
       value: boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604594329533147891, guid: 795d540cba09572438081a3f19f29dfa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.911
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
