@@ -1,0 +1,12 @@
+ItemB1:
+  colour: rgb_60_163_171
+  dimension: dim_2_3_4
+  descriptior: Box
+ItemB2:
+  colour: rgb_60_50_171
+  dimension: dim_22_10_4
+  descriptior: Box2
+ItemB3:
+  colour: rgb_196_127_53
+  dimension: dim_5_5_9
+  descriptior: TallBox

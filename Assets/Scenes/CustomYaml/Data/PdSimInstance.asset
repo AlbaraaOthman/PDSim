@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26bf7a6cc511a7944ae3d20c7320e177, type: 3}
+  m_Name: PdSimInstance
+  m_EditorClassIdentifier: 
+  objects:
+  - name: ItemB1
+    type: Bricks
+  - name: loc_10_10_10
+    type: Location
+  - name: ItemB2
+    type: Bricks
+  - name: loc_1_3_5
+    type: Location
+  - name: ItemB3
+    type: Bricks
+  - name: loc_18_5_2
+    type: Location
+  init:
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - ItemB1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: not_on_something
+    parameters:
+    - ItemB1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - ItemB1
+    - loc_10_10_10
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - ItemB2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: not_on_something
+    parameters:
+    - ItemB2
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - ItemB2
+    - loc_1_3_5
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - ItemB3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: not_on_something
+    parameters:
+    - ItemB3
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - ItemB3
+    - loc_18_5_2
+  plan:
+  - id: 
+    name: move
+    parameters:
+    - ItemB3
+    - loc_18_5_2
+    - loc_10_10_10
+    startTime: -1
+    endTime: -1
+  - id: 
+    name: move_on
+    parameters:
+    - ItemB1
+    - ItemB3
+    - loc_10_10_10
+    startTime: -1
+    endTime: -1
