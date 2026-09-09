@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26bf7a6cc511a7944ae3d20c7320e177, type: 3}
-  m_Name: PdSimInstance
+  m_Name: PdSimInstanceOrig
   m_EditorClassIdentifier: 
   objects:
   - name: ItemB1
@@ -24,14 +24,6 @@ MonoBehaviour:
   - name: ItemB3
     type: Bricks
   - name: loc_18_5_2
-    type: Location
-  - name: ItemB4
-    type: Bricks
-  - name: loc_2_1_6
-    type: Location
-  - name: ItemB5
-    type: Bricks
-  - name: loc_7_0_6
     type: Location
   init:
   - value:
@@ -91,67 +83,13 @@ MonoBehaviour:
     parameters:
     - ItemB3
     - loc_18_5_2
-  - value:
-      contentCase: 4
-      valueSymbol: True
-    fluentName: clear
-    parameters:
-    - ItemB4
-  - value:
-      contentCase: 4
-      valueSymbol: True
-    fluentName: not_on_something
-    parameters:
-    - ItemB4
-  - value:
-      contentCase: 4
-      valueSymbol: True
-    fluentName: brick_at
-    parameters:
-    - ItemB4
-    - loc_2_1_6
-  - value:
-      contentCase: 4
-      valueSymbol: True
-    fluentName: clear
-    parameters:
-    - ItemB5
-  - value:
-      contentCase: 4
-      valueSymbol: True
-    fluentName: not_on_something
-    parameters:
-    - ItemB5
-  - value:
-      contentCase: 4
-      valueSymbol: True
-    fluentName: brick_at
-    parameters:
-    - ItemB5
-    - loc_7_0_6
   plan:
   - id: 
     name: move
     parameters:
-    - ItemB5
-    - loc_7_0_6
+    - ItemB3
     - loc_18_5_2
-    startTime: -1
-    endTime: -1
-  - id: 
-    name: move
-    parameters:
-    - ItemB1
     - loc_10_10_10
-    - loc_18_5_2
-    startTime: -1
-    endTime: -1
-  - id: 
-    name: move_on
-    parameters:
-    - ItemB3
-    - ItemB5
-    - loc_18_5_2
     startTime: -1
     endTime: -1
   - id: 
@@ -159,6 +97,6 @@ MonoBehaviour:
     parameters:
     - ItemB1
     - ItemB3
-    - loc_18_5_2
+    - loc_10_10_10
     startTime: -1
     endTime: -1

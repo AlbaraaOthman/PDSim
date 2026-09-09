@@ -133,16 +133,16 @@ MonoBehaviour:
   - id: 
     name: move
     parameters:
-    - ItemB5
-    - loc_7_0_6
+    - ItemB1
+    - loc_10_10_10
     - loc_18_5_2
     startTime: -1
     endTime: -1
   - id: 
     name: move
     parameters:
-    - ItemB1
-    - loc_10_10_10
+    - ItemB5
+    - loc_7_0_6
     - loc_18_5_2
     startTime: -1
     endTime: -1
