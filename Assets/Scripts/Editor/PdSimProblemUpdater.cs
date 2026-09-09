@@ -43,6 +43,19 @@ public static class PdSimServerPoller
         var planRequest = new ProtobufRequest("plan");
         var planResponse = planRequest.Connect();
 
+        var yamlRequest = new YamlRequest();
+        var yamlResponse = yamlRequest.Connect();
+
+        if (yamlResponse == null || yamlResponse["yaml"] == null)
+        {
+            Debug.LogWarning("No YAML received.");
+            return;
+        }
+
+        string yamlText = yamlResponse["yaml"].ToString();
+
+        Debug.Log("Received YAML:\n" + yamlText);
+
         if (problemResponse == null || planResponse == null)
         {
             Debug.LogWarning("Problem or plan not received.");
@@ -92,25 +105,47 @@ public static class PdSimServerPoller
 
             var instancePath = simulationDataRoot + "/PdSimInstance.asset";
 
+
             var newProblem = AssetDatabase.LoadAssetAtPath<PdSimProblem>(problemPath);
             var newInstance = AssetDatabase.LoadAssetAtPath<PdSimInstance>(instancePath);
 
             var manager = Object.FindObjectOfType<PdSimManager>();
 
+            System.IO.Directory.CreateDirectory("Assets/Data");
+            string yamlAssetPath = "Assets/Data/upload.yaml";
+            System.IO.File.WriteAllText(yamlAssetPath, yamlText);
+            AssetDatabase.ImportAsset(yamlAssetPath);
+            AssetDatabase.Refresh();
+
+            TextAsset yamlAsset =
+                AssetDatabase.LoadAssetAtPath<TextAsset>(yamlAssetPath);
+
+            var informationReader = Object.FindObjectOfType<InformationReader>();
+
+            if (informationReader != null)
+            {
+                informationReader.yamlFile = yamlAsset;
+                EditorUtility.SetDirty(informationReader);
+            }
+            else
+            {
+                Debug.LogWarning("No InformationReader found in the scene.");
+            }
+
 
             if (manager == null)
             {
-                Debug.LogWarning("No PdSimSimulationManager found in the scene. Please add one to manage the simulation.");
+                Debug.LogWarning("No PdSimManager found in the scene.");
             }
             else
             {
                 manager.problemModel = newProblem;
                 manager.problemInstance = newInstance;
+
+                EditorUtility.SetDirty(manager);
+
+                manager.SetUpObjects();
             }
-
-            EditorUtility.SetDirty(manager);
-
-            manager.SetUpObjects();
 
             Debug.Log("New PDSim assets created.");
 
@@ -122,6 +157,15 @@ public static class PdSimServerPoller
             Debug.Log("No change.");
         }
     }
+
+    public class YamlRequest : NetMqClientJson
+    {
+        public YamlRequest()
+        {
+            request.Add("request", "yaml");
+        }
+    }
+
 
     private static bool ByteArraysEqual(byte[] a, byte[] b)
     {

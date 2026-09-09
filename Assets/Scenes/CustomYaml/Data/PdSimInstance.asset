@@ -133,9 +133,9 @@ MonoBehaviour:
   - id: 
     name: move
     parameters:
-    - ItemB5
-    - loc_7_0_6
+    - ItemB3
     - loc_18_5_2
+    - loc_7_0_6
     startTime: -1
     endTime: -1
   - id: 
@@ -143,7 +143,7 @@ MonoBehaviour:
     parameters:
     - ItemB1
     - loc_10_10_10
-    - loc_18_5_2
+    - loc_7_0_6
     startTime: -1
     endTime: -1
   - id: 
@@ -151,7 +151,7 @@ MonoBehaviour:
     parameters:
     - ItemB3
     - ItemB5
-    - loc_18_5_2
+    - loc_7_0_6
     startTime: -1
     endTime: -1
   - id: 
@@ -159,6 +159,6 @@ MonoBehaviour:
     parameters:
     - ItemB1
     - ItemB3
-    - loc_18_5_2
+    - loc_7_0_6
     startTime: -1
     endTime: -1

@@ -50,6 +50,7 @@ namespace PDSim.Simulation
         public PdSimProblem problemModel;
         public PdSimInstance problemInstance;
 
+        
         private bool isTimedProblem;
 
         // State
@@ -636,6 +637,8 @@ namespace PDSim.Simulation
             var leafNodes = problemModel.typesDeclaration.GetLeafNodes();
             foreach (var type in leafNodes)
             {
+                // Creating the prefabs for each type
+
                 var folderPath = AssetUtils.GetSimulationObjectsPath(SceneManager.GetActiveScene().name);
                 // Get the generic object prefab
                 Object originalPrefab = (GameObject)AssetDatabase.LoadAssetAtPath(CommonPaths.PDSIM_OBJECT_PREFAB, typeof(GameObject));
@@ -677,7 +680,13 @@ namespace PDSim.Simulation
 
             // Spawn objects
             foreach (var obj in problemInstance.objects)
-            {
+            { 
+                var existingProblemObjects = problemObjectsRootObject.GetComponentsInChildren<PdSimSimulationObject>();
+                if (existingProblemObjects.Any(o => o.gameObject.name == obj.name))
+                {
+                    Debug.LogWarning("Object " + obj.name + " already exists in the scene. Skipping creation.");
+                    continue;
+                }
                 var type = obj.type;
                 var prefabPath = AssetUtils.GetSimulationObjectsPath(SceneManager.GetActiveScene().name) + "/" + type + ".prefab";
                 var prefab = AssetDatabase.LoadAssetAtPath<PdSimSimulationObject>(prefabPath);
