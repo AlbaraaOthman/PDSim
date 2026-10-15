@@ -188,6 +188,9 @@ namespace PDSim.SceneUI
         {
             if (simManager.SimulationRunning)
             {
+                // Debug.Log("Play button clicked. Simulation running: " + simManager.SimulationRunning);
+
+                simManager = PdSimManager.Instance;
                 // Resume the simulation
                 Time.timeScale = 1;
 

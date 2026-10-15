@@ -78,6 +78,7 @@ public static class PdSimServerPoller
         bool planChanged =
             !ByteArraysEqual(previousPlan, planResponse);
 
+
         if (problemChanged || planChanged)
         {
             Debug.Log("PDSim data has changed!");
@@ -145,6 +146,7 @@ public static class PdSimServerPoller
                 EditorUtility.SetDirty(manager);
 
                 manager.SetUpObjects();
+                manager.RefreshProblemData();
             }
 
             Debug.Log("New PDSim assets created.");

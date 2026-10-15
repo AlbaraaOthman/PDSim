@@ -20,10 +20,20 @@ namespace PDSim.Simulation
                 return;
             }
 
-            ReadYaml();
         }
 
-        private void ReadYaml()
+        private float LocationParser(string locationString)
+        {
+            if (locationString.StartsWith("n"))
+            {
+                return float.Parse(locationString.Substring(1));
+            } else
+            {
+                return float.Parse(locationString);
+            }
+        }
+
+        public void ReadYaml()
         {
             var deserializer = new DeserializerBuilder().Build();
 
@@ -39,17 +49,31 @@ namespace PDSim.Simulation
                 string colour = GetProperty(item.Value, "colour");
                 string dimension = GetProperty(item.Value, "dimension");
                 string descriptor = GetProperty(item.Value, "descriptior");
+                string initialLocation = GetProperty(item.Value, "initial_location");
 
                 // Debug.Log(
                 //     "Item: " + itemName +
                 //     " | Colour: " + colour +
-                //     " | Dimension: " + dimension +
+                //     " | Dimension: " + dimension +   
                 //     " | Descriptor: " + descriptor
                 // );
 
                 GameObject problemObjects = GameObject.Find("Problem Objects");
+                GameObject yamlObjects = GameObject.Find("YAML Objects");
 
-                Transform itemTransform = problemObjects.transform.Find(itemName);
+                Transform itemTransform = null;
+
+                // Search planning objects first
+                if (problemObjects != null)
+                {
+                    itemTransform = problemObjects.transform.Find(itemName);
+                }
+
+                // Search additional YAML objects
+                if (itemTransform == null && yamlObjects != null)
+                {
+                    itemTransform = yamlObjects.transform.Find(itemName);
+                }
 
                 if (itemTransform == null)
                 {
@@ -68,30 +92,46 @@ namespace PDSim.Simulation
 
                 string[] split_colour = colour.Split('_');
 
-                float r_float = 255/float.Parse(split_colour[1]);
-                float g_float = 255/float.Parse(split_colour[2]);
-                float b_float = 255/float.Parse(split_colour[3]);
-                
+                float r_float = float.Parse(split_colour[1]) / 255f;
+                float g_float = float.Parse(split_colour[2]) / 255f;
+                float b_float = float.Parse(split_colour[3]) / 255f;
+
                 Color currColour = new Color(r_float, g_float, b_float);
 
                 MeshRenderer gameObjectRenderer = mainBlock.GetComponent<MeshRenderer>();
 
-                Material newMaterial = new Material(Shader.Find("Standard"));
-                newMaterial.color = currColour;
+                Material newMaterial = new Material(Shader.Find("Standard"))
+                {
+                    color = currColour
+                };
                 gameObjectRenderer.material = newMaterial;
 
                 // Set the dimension of the item
                 string[] split_dimension = dimension.Split('_');
                 float dimensionX = float.Parse(split_dimension[1]);
-                float dimensionY = float.Parse(split_dimension[2]);
-                float dimensionZ = float.Parse(split_dimension[3]);
+                float dimensionZ = float.Parse(split_dimension[2]);
+                float dimensionY = float.Parse(split_dimension[3]);
+
 
                 mainBlock.transform.localScale = new Vector3(dimensionX, dimensionY, dimensionZ);
 
+                    
+                string[] split_location = initialLocation.Split('_');
+                Debug.Log("Initial Location: " + initialLocation);
+
+                float locationX = LocationParser(split_location[1]);
+                float locationZ = LocationParser(split_location[2]);
+                float locationY = LocationParser(split_location[3]);
+
+                mainBlock.transform.localPosition = new Vector3(locationX, locationY + dimensionY / 2f, locationZ);
+
+                
                 // Set the descriptor of the item
 
                 TextMeshPro textMesh = mainBlock.transform.Find("Item_Label").GetComponent<TextMeshPro>();
                 textMesh.text = descriptor;
+
+
 
 
                 DisableLocationMeshes();

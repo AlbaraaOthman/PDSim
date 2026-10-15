@@ -50,7 +50,7 @@ namespace PDSim.Simulation
         public PdSimProblem problemModel;
         public PdSimInstance problemInstance;
 
-        
+
         private bool isTimedProblem;
 
         // State
@@ -243,10 +243,74 @@ namespace PDSim.Simulation
             if (fluent.parameters.Count > 0)
             {
                 var objectName = fluent.parameters[0];
-                var obj = _objects[objectName];
-                obj.AddFluentAssignment(fluent);
+
+                if (_objects.TryGetValue(objectName, out var obj))
+                {
+                    obj.AddFluentAssignment(fluent);
+                }
+                else
+                {
+                    Debug.LogWarning($"Object '{objectName}' was not found in _objects.");
+                }
             }
         }
+
+        public void RefreshProblemData()
+        {
+            // State
+            _state = new State();
+
+            foreach (var init in problemInstance.init)
+            {
+                var node = StateNode.FromAssignment(init);
+                _state.AddOrUpdate(node);
+            }
+
+            // Objects
+            _objects = new Dictionary<string, PdSimSimulationObject>();
+
+            var problemObjectsRootObject = GameObject.Find("Problem Objects");
+
+            for (var i = 0; i < problemObjectsRootObject.transform.childCount; i++)
+            {
+                var child = problemObjectsRootObject.transform.GetChild(i);
+
+                _objects[child.name] =
+                    child.gameObject.GetComponent<PdSimSimulationObject>();
+            }
+
+            // Types -> objects
+            _typeToObjects = new Dictionary<string, List<string>>();
+
+            foreach (var obj in problemInstance.objects)
+            {
+                if (!_typeToObjects.ContainsKey(obj.type))
+                    _typeToObjects.Add(obj.type, new List<string>());
+
+                _typeToObjects[obj.type].Add(obj.name);
+            }
+
+            // Predicates
+            _predicates = new Dictionary<string, PdSimFluent>();
+
+            foreach (var predicate in problemModel.fluents)
+                _predicates[predicate.name] = predicate;
+
+            // Actions
+            _instantaneousActions =
+                new Dictionary<string, PdSimInstantaneousAction>();
+
+            foreach (var action in problemModel.instantaneousActions)
+                _instantaneousActions[action.name] = action;
+
+            // Durative actions
+            _durativeActions =
+                new Dictionary<string, PdSimDurativeAction>();
+
+            foreach (var action in problemModel.durativeActions)
+                _durativeActions[action.name] = action;
+        }
+
 
         /// <summary>
         /// Given a action instance (as appears in the plan) and a effect from the action definition
@@ -474,22 +538,22 @@ namespace PDSim.Simulation
 
                 var attributes = fluent.parameters; // attributes passed to the effect (grounded)
                 var attributeTypes = attributes.Select(attribute => _objects[attribute].objectType).ToList(); // types of the attributes
-                
+
                 var fluentParams = _effectToAnimations[fluent.fluentName].metaData.parameters; // fluent parameters as defined in the model
-               
+
 
                 var animationParams = animationData.parameters;
 
                 if (fluentParams.Count != attributeTypes.Count)
                     continue;
-                
+
                 var match = true;
                 for (var i = 0; i < fluentParams.Count; i++)
                 {
                     var fluentDefinitionType = fluentParams[i].type;
                     var attributeType = attributeTypes[i];
                     var animationParamType = animationParams[i];
-                    
+
                     if (animationParamType != attributeType && !typeTree.IsChildOf(attributeType, animationParamType))
                     {
                         match = false;
@@ -500,7 +564,7 @@ namespace PDSim.Simulation
                 }
                 if (!match)
                     continue;
-                
+
 
                 animationQueue.Enqueue(new AnimationQueueElement()
                 {
@@ -637,6 +701,16 @@ namespace PDSim.Simulation
             var leafNodes = problemModel.typesDeclaration.GetLeafNodes();
             foreach (var type in leafNodes)
             {
+
+                if (problemObjects.prefabs == null){
+                    problemObjects.prefabs = new List<PdSimSimulationObject>();
+                }
+
+                if (problemObjects.prefabs.Any(p => p.objectType == type))
+                {
+                    Debug.LogWarning("Prefab for type " + type + " already exists. Skipping creation.");
+                    continue;
+                }
                 // Creating the prefabs for each type
 
                 var folderPath = AssetUtils.GetSimulationObjectsPath(SceneManager.GetActiveScene().name);
@@ -679,9 +753,10 @@ namespace PDSim.Simulation
             AssetDatabase.Refresh();
 
             // Spawn objects
+            var existingProblemObjects = problemObjectsRootObject.GetComponentsInChildren<PdSimSimulationObject>();
+
             foreach (var obj in problemInstance.objects)
             { 
-                var existingProblemObjects = problemObjectsRootObject.GetComponentsInChildren<PdSimSimulationObject>();
                 if (existingProblemObjects.Any(o => o.gameObject.name == obj.name))
                 {
                     Debug.LogWarning("Object " + obj.name + " already exists in the scene. Skipping creation.");
