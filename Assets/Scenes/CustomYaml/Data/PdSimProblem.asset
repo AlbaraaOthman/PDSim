@@ -15,8 +15,8 @@ MonoBehaviour:
   domainName: 3DSceneRecreation_domain
   problemName: 3DSceneRecreation
   features:
-  - FlatTyping
   - ActionBased
+  - FlatTyping
   typesDeclaration:
     serializableTypeNodes:
     - name: object

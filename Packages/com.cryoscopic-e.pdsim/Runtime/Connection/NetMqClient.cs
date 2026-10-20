@@ -40,7 +40,7 @@ namespace PDSim.Connection
     public class NetMqClientJson : NetMqClient<JObject>
     {
 
-        public NetMqClientJson(string ip = "127.0.0.1", string port = "5556", int timeout = 2000) : base(ip, port, timeout) { }
+        public NetMqClientJson(string ip = "127.0.0.1", string port = "5556", int timeout = 200) : base(ip, port, timeout) { }
 
         public override JObject Connect()
         {
@@ -61,7 +61,7 @@ namespace PDSim.Connection
                 // Wait for response
                 while (!received)
                 {
-                    if (socket.TryReceiveFrameString(TimeSpan.FromMilliseconds(5000), out var response))
+                    if (socket.TryReceiveFrameString(TimeSpan.FromMilliseconds(GetTimeout()),out var response))
                     {
                         //Debug.Log("Received response: " + response);
                         jsonResponse = JObject.Parse(response);
@@ -89,7 +89,7 @@ namespace PDSim.Connection
 
     public class NetMqClientBytes : NetMqClient<byte[]>
     {
-        public NetMqClientBytes(string ip = "127.0.0.1", string port = "5556", int timeout = 2000) : base(ip, port, timeout) { }
+        public NetMqClientBytes(string ip = "127.0.0.1", string port = "5556", int timeout = 200) : base(ip, port, timeout) { }
 
         public override byte[] Connect()
         {
@@ -110,7 +110,7 @@ namespace PDSim.Connection
                 // Wait for response
                 while (!received)
                 {
-                    if (socket.TryReceiveFrameBytes(TimeSpan.FromMilliseconds(10000), out var response))
+                    if (socket.TryReceiveFrameBytes(TimeSpan.FromMilliseconds(GetTimeout()),out var response))
                     {
                         //Debug.Log("Received response: " + response);
                         byteResponse = response;

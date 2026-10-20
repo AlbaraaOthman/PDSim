@@ -40,8 +40,19 @@ public static class PdSimServerPoller
         var problemRequest = new ProtobufRequest("problem");
         var problemResponse = problemRequest.Connect();
 
+        if (problemResponse == null)
+        {
+            Debug.LogWarning("Python server is offline.");
+            return;
+        }
+
+
         var planRequest = new ProtobufRequest("plan");
         var planResponse = planRequest.Connect();
+
+        if (planResponse == null){
+            return;
+        }
 
         var yamlRequest = new YamlRequest();
         var yamlResponse = yamlRequest.Connect();
@@ -62,20 +73,22 @@ public static class PdSimServerPoller
             return;
         }
 
-        // First successful poll
-        if (previousProblem == null || previousPlan == null)
-        {
-            previousProblem = problemResponse;
-            previousPlan = planResponse;
+        // // First successful poll
+        // if (previousProblem == null || previousPlan == null)
+        // {
+        //     previousProblem = problemResponse;
+        //     previousPlan = planResponse;
 
-            Debug.Log("Initial problem and plan stored.");
-            return;
-        }
+        //     Debug.Log("Initial problem and plan stored.");
+        //     return;
+        // }
 
         bool problemChanged =
+            previousProblem == null ||
             !ByteArraysEqual(previousProblem, problemResponse);
 
         bool planChanged =
+            previousPlan == null ||
             !ByteArraysEqual(previousPlan, planResponse);
 
         if (problemChanged || planChanged)
@@ -145,6 +158,16 @@ public static class PdSimServerPoller
                 EditorUtility.SetDirty(manager);
 
                 manager.SetUpObjects();
+
+                var doneRequest = new DoneRequest();
+                var doneResponse = doneRequest.Connect();
+
+                if (doneResponse != null &&
+                    doneResponse["status"]?.ToString() == "ok")
+                {
+                    Debug.Log("Python server acknowledged scene transfer.");
+                }
+
             }
 
             Debug.Log("New PDSim assets created.");
@@ -166,6 +189,13 @@ public static class PdSimServerPoller
         }
     }
 
+    public class DoneRequest : NetMqClientJson
+    {
+        public DoneRequest()
+        {
+            request.Add("request", "done");
+        }
+    }
 
     private static bool ByteArraysEqual(byte[] a, byte[] b)
     {

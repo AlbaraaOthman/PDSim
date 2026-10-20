@@ -3739,10 +3739,10 @@ Computer_desk-1:
   descriptior: Computer_desk
   initial_location: loc_3_n1_1
 Car_door_panel-2:
-  colour: rgb_167_155_136
-  dimension: dim_1.45_1.27_1
+  colour: rgb_176_168_154
+  dimension: dim_1.34_0.88_1
   descriptior: Car_door_panel
-  initial_location: loc_4_n0_0
+  initial_location: loc_4_0_n0
 Half_Moon-3:
   colour: rgb_16_16_16
   dimension: dim_0.1_0.25_1
@@ -3999,10 +3999,10 @@ Wooden_dresser-53:
   descriptior: Wooden_dresser
   initial_location: loc_4_n2_0
 Analog_clock-54:
-  colour: rgb_161_162_156
-  dimension: dim_0.24_0.26_1
+  colour: rgb_185_188_185
+  dimension: dim_0.25_0.28_1
   descriptior: Analog_clock
-  initial_location: loc_3_n0_3
+  initial_location: loc_1_0_4
 Brick_block-55:
   colour: rgb_159_141_118
   dimension: dim_0.26_0.39_1
@@ -5798,3 +5798,1613 @@ Bat_ear-413:
   dimension: dim_0.55_0.43_1
   descriptior: Bat_ear
   initial_location: loc_2_1_3
+Old_book-0:
+  colour: rgb_53_64_79
+  dimension: dim_0.38_0.57_1
+  descriptior: Old_book
+  initial_location: loc_0_0_2
+Rubber_ducky-1:
+  colour: rgb_60_57_53
+  dimension: dim_0.4_0.43_1
+  descriptior: Rubber_ducky
+  initial_location: loc_n0_0_1
+Computer_case-2:
+  colour: rgb_40_41_43
+  dimension: dim_0.46_0.32_1
+  descriptior: Computer_case
+  initial_location: loc_n0_0_0
+Guitar_pick-3:
+  colour: rgb_218_169_92
+  dimension: dim_0.1_0.25_1
+  descriptior: Guitar_pick
+  initial_location: loc_n0_n0_0
+Wooden_table-4:
+  colour: rgb_131_92_53
+  dimension: dim_0.17_0.2_1
+  descriptior: Wooden_table
+  initial_location: loc_n0_n0_0
+Spider_web-5:
+  colour: rgb_29_28_28
+  dimension: dim_0.12_0.28_1
+  descriptior: Spider_web
+  initial_location: loc_n0_n0_1
+Sunflower_petal-6:
+  colour: rgb_168_131_3
+  dimension: dim_0.11_0.12_1
+  descriptior: Sunflower_petal
+  initial_location: loc_n0_n0_1
+Teeth_enamel-7:
+  colour: rgb_190_210_194
+  dimension: dim_0.07_0.04_1
+  descriptior: Teeth_enamel
+  initial_location: loc_n0_n0_0
+Matterhorn_hammer-8:
+  colour: rgb_37_35_38
+  dimension: dim_0.42_0.46_1
+  descriptior: Matterhorn_hammer
+  initial_location: loc_1_n0_2
+Goldfish_scale-9:
+  colour: rgb_139_175_108
+  dimension: dim_0.09_0.28_1
+  descriptior: Goldfish_scale
+  initial_location: loc_n0_n0_0
+Nintendo_Switch-10:
+  colour: rgb_200_193_192
+  dimension: dim_0.23_0.25_1
+  descriptior: Nintendo_Switch
+  initial_location: loc_n0_0_1
+Light_bulb-11:
+  colour: rgb_159_144_152
+  dimension: dim_0.26_0.24_1
+  descriptior: Light_bulb
+  initial_location: loc_n0_0_1
+Spoiler_Wing-12:
+  colour: rgb_142_130_117
+  dimension: dim_0.31_0.64_1
+  descriptior: Spoiler_Wing
+  initial_location: loc_n0_0_1
+Digital_thermometer-13:
+  colour: rgb_193_201_202
+  dimension: dim_0.84_0.27_1
+  descriptior: Digital_thermometer
+  initial_location: loc_1_0_4
+Lipstick_tube-14:
+  colour: rgb_79_41_47
+  dimension: dim_0.53_0.23_1
+  descriptior: Lipstick_tube
+  initial_location: loc_0_1_3
+Plastic_bottle-15:
+  colour: rgb_180_115_103
+  dimension: dim_0.3_0.09_1
+  descriptior: Plastic_bottle
+  initial_location: loc_0_n0_1
+Game_controller-16:
+  colour: rgb_92_84_86
+  dimension: dim_0.22_0.58_1
+  descriptior: Game_controller
+  initial_location: loc_0_n0_2
+Coffee_bean-17:
+  colour: rgb_101_76_60
+  dimension: dim_0.04_0.07_1
+  descriptior: Coffee_bean
+  initial_location: loc_n0_n0_0
+Analog_clock-18:
+  colour: rgb_227_226_224
+  dimension: dim_0.24_0.25_1
+  descriptior: Analog_clock
+  initial_location: loc_1_1_4
+Red_bell_pepper-19:
+  colour: rgb_115_33_29
+  dimension: dim_0.07_0.12_1
+  descriptior: Red_bell_pepper
+  initial_location: loc_0_n0_2
+Gaming_mouse-20:
+  colour: rgb_32_34_38
+  dimension: dim_0.47_0.34_1
+  descriptior: Gaming_mouse
+  initial_location: loc_n0_n0_1
+Dark_blue_book-21:
+  colour: rgb_47_58_73
+  dimension: dim_0.34_0.54_1
+  descriptior: Dark_blue_book
+  initial_location: loc_0_n0_2
+Wooden_chair-22:
+  colour: rgb_49_48_48
+  dimension: dim_0.39_0.45_1
+  descriptior: Wooden_chair
+  initial_location: loc_n0_n0_2
+Matterport_Scanner-23:
+  colour: rgb_29_30_34
+  dimension: dim_0.4_0.44_1
+  descriptior: Matterport_Scanner
+  initial_location: loc_1_n0_2
+Rolling_drawer_unit-24:
+  colour: rgb_135_117_98
+  dimension: dim_1.7_0.55_1
+  descriptior: Rolling_drawer_unit
+  initial_location: loc_2_n0_2
+Laptop_computer-25:
+  colour: rgb_50_49_49
+  dimension: dim_0.59_1.07_1
+  descriptior: Laptop_computer
+  initial_location: loc_0_n0_2
+Ear_wax-26:
+  colour: rgb_108_77_49
+  dimension: dim_0.13_0.16_1
+  descriptior: Ear_wax
+  initial_location: loc_n0_n0_1
+Light_bulb-27:
+  colour: rgb_144_132_143
+  dimension: dim_0.25_0.25_1
+  descriptior: Light_bulb
+  initial_location: loc_n0_0_1
+Airplane_wing-28:
+  colour: rgb_133_124_113
+  dimension: dim_0.39_0.72_1
+  descriptior: Airplane_wing
+  initial_location: loc_n0_0_1
+Square_tile-29:
+  colour: rgb_186_176_167
+  dimension: dim_0.25_0.25_1
+  descriptior: Square_tile
+  initial_location: loc_2_0_2
+Green_leaf-30:
+  colour: rgb_131_157_96
+  dimension: dim_0.05_0.06_1
+  descriptior: Green_leaf
+  initial_location: loc_n0_n0_0
+Car_spare_tire-31:
+  colour: rgb_55_54_57
+  dimension: dim_0.39_0.54_1
+  descriptior: Car_spare_tire
+  initial_location: loc_3_1_3
+Flash_drive-32:
+  colour: rgb_148_140_117
+  dimension: dim_0.29_0.38_1
+  descriptior: Flash_drive
+  initial_location: loc_2_0_3
+Plastic_bottle-33:
+  colour: rgb_167_109_102
+  dimension: dim_0.28_0.08_1
+  descriptior: Plastic_bottle
+  initial_location: loc_0_n0_1
+Toilet_paper_roll-34:
+  colour: rgb_49_49_48
+  dimension: dim_0.61_0.45_1
+  descriptior: Toilet_paper_roll
+  initial_location: loc_n0_n0_2
+Flavor_Sticks-35:
+  colour: rgb_135_132_129
+  dimension: dim_0.31_0.31_1
+  descriptior: Flavor_Sticks
+  initial_location: loc_n0_0_1
+Printer_cartridge-36:
+  colour: rgb_82_75_79
+  dimension: dim_0.18_0.57_1
+  descriptior: Printer_cartridge
+  initial_location: loc_0_n0_2
+Cross_symbol-37:
+  colour: rgb_196_200_196
+  dimension: dim_0.25_0.24_1
+  descriptior: Cross_symbol
+  initial_location: loc_1_1_4
+Tomato_slice-38:
+  colour: rgb_101_30_28
+  dimension: dim_0.06_0.11_1
+  descriptior: Tomato_slice
+  initial_location: loc_0_n0_2
+Wine_glass-39:
+  colour: rgb_62_39_45
+  dimension: dim_0.49_0.34_1
+  descriptior: Wine_glass
+  initial_location: loc_0_0_3
+Digital_thermometer-40:
+  colour: rgb_153_119_89
+  dimension: dim_0.76_0.65_1
+  descriptior: Digital_thermometer
+  initial_location: loc_2_n0_3
+Coffee_bean-41:
+  colour: rgb_89_69_57
+  dimension: dim_0.04_0.07_1
+  descriptior: Coffee_bean
+  initial_location: loc_n0_n0_0
+Bullet_tip-42:
+  colour: rgb_140_132_122
+  dimension: dim_0.13_0.07_1
+  descriptior: Bullet_tip
+  initial_location: loc_n0_0_1
+Car_bumper-43:
+  colour: rgb_57_55_58
+  dimension: dim_0.65_0.56_1
+  descriptior: Car_bumper
+  initial_location: loc_3_1_3
+Kitchen_knife-44:
+  colour: rgb_233_231_228
+  dimension: dim_0.31_3.08_1
+  descriptior: Kitchen_knife
+  initial_location: loc_1_1_3
+Blue_satellite_dish-45:
+  colour: rgb_145_147_166
+  dimension: dim_0.15_0.06_1
+  descriptior: Blue_satellite_dish
+  initial_location: loc_n0_0_2
+Car_headlight_housing-46:
+  colour: rgb_197_190_174
+  dimension: dim_1.64_1.51_1
+  descriptior: Car_headlight_housing
+  initial_location: loc_3_0_1
+Wooden_box-47:
+  colour: rgb_139_118_86
+  dimension: dim_1.66_1.02_1
+  descriptior: Wooden_box
+  initial_location: loc_2_n0_2
+Toilet_paper_roll-48:
+  colour: rgb_159_153_148
+  dimension: dim_0.29_0.2_1
+  descriptior: Toilet_paper_roll
+  initial_location: loc_2_0_0
+Car_door_panel-49:
+  colour: rgb_197_190_174
+  dimension: dim_1.52_1.23_1
+  descriptior: Car_door_panel
+  initial_location: loc_3_0_2
+North_Dakota-50:
+  colour: rgb_74_104_165
+  dimension: dim_0.56_0.55_1
+  descriptior: North_Dakota
+  initial_location: loc_2_n0_0
+Blue_whale-51:
+  colour: rgb_33_42_56
+  dimension: dim_0.54_0.28_1
+  descriptior: Blue_whale
+  initial_location: loc_1_n1_4
+Wooden_box-52:
+  colour: rgb_138_105_73
+  dimension: dim_0.68_0.54_1
+  descriptior: Wooden_box
+  initial_location: loc_2_n1_3
+Paper_airplane-53:
+  colour: rgb_193_184_176
+  dimension: dim_0.44_2.61_1
+  descriptior: Paper_airplane
+  initial_location: loc_3_2_4
+Paper_airplane-55:
+  colour: rgb_192_184_175
+  dimension: dim_0.45_3.77_1
+  descriptior: Paper_airplane
+  initial_location: loc_3_2_4
+Small_wooden_box-56:
+  colour: rgb_139_118_86
+  dimension: dim_2.02_1.3_1
+  descriptior: Small_wooden_box
+  initial_location: loc_2_n0_2
+Blue_ice_cube-57:
+  colour: rgb_74_103_164
+  dimension: dim_0.81_0.54_1
+  descriptior: Blue_ice_cube
+  initial_location: loc_2_n0_0
+Black_sneaker-58:
+  colour: rgb_51_49_49
+  dimension: dim_0.38_0.5_1
+  descriptior: Black_sneaker
+  initial_location: loc_3_0_4
+Bread_slice-59:
+  colour: rgb_185_178_167
+  dimension: dim_0.25_0.37_1
+  descriptior: Bread_slice
+  initial_location: loc_3_n0_3
+Metal_tubing-60:
+  colour: rgb_159_173_180
+  dimension: dim_0.84_0.29_1
+  descriptior: Metal_tubing
+  initial_location: loc_1_n0_4
+White_plastic_block-61:
+  colour: rgb_168_168_163
+  dimension: dim_0.85_0.34_1
+  descriptior: White_plastic_block
+  initial_location: loc_3_n0_3
+Wooden_rifle-62:
+  colour: rgb_105_74_47
+  dimension: dim_0.51_0.07_1
+  descriptior: Wooden_rifle
+  initial_location: loc_2_n0_0
+Surfboard_nose-63:
+  colour: rgb_29_33_39
+  dimension: dim_0.49_0.18_1
+  descriptior: Surfboard_nose
+  initial_location: loc_0_n0_1
+Golden_Retriever-64:
+  colour: rgb_138_107_103
+  dimension: dim_0.11_0.1_1
+  descriptior: Golden_Retriever
+  initial_location: loc_2_n0_0
+Shark_fin-65:
+  colour: rgb_26_30_38
+  dimension: dim_0.36_0.08_1
+  descriptior: Shark_fin
+  initial_location: loc_2_n0_0
+Ceramic_plate-66:
+  colour: rgb_186_203_187
+  dimension: dim_0.1_0.14_1
+  descriptior: Ceramic_plate
+  initial_location: loc_n0_n0_0
+Dark_blue_book-67:
+  colour: rgb_52_63_79
+  dimension: dim_0.35_0.59_1
+  descriptior: Dark_blue_book
+  initial_location: loc_0_0_2
+Sunflower_petal-68:
+  colour: rgb_167_132_3
+  dimension: dim_0.15_0.12_1
+  descriptior: Sunflower_petal
+  initial_location: loc_0_n0_1
+Black_notebook-69:
+  colour: rgb_53_63_79
+  dimension: dim_0.36_0.89_1
+  descriptior: Black_notebook
+  initial_location: loc_0_0_2
+Wooden_table-70:
+  colour: rgb_126_88_52
+  dimension: dim_0.23_0.3_1
+  descriptior: Wooden_table
+  initial_location: loc_n0_n0_0
+Laptop_lid-71:
+  colour: rgb_55_55_50
+  dimension: dim_0.38_0.44_1
+  descriptior: Laptop_lid
+  initial_location: loc_n0_0_1
+DJ_controller-72:
+  colour: rgb_74_72_106
+  dimension: dim_0.67_0.14_1
+  descriptior: DJ_controller
+  initial_location: loc_n0_0_0
+Manta_ray-73:
+  colour: rgb_28_27_27
+  dimension: dim_0.13_0.29_1
+  descriptior: Manta_ray
+  initial_location: loc_n0_n0_1
+Water_bottle-74:
+  colour: rgb_26_26_29
+  dimension: dim_0.31_0.25_1
+  descriptior: Water_bottle
+  initial_location: loc_0_n0_2
+South_Dakota_Flag-75:
+  colour: rgb_69_44_50
+  dimension: dim_0.59_0.46_1
+  descriptior: South_Dakota_Flag
+  initial_location: loc_0_1_4
+Space_Shuttle_Door-76:
+  colour: rgb_187_150_108
+  dimension: dim_1.58_1.16_1
+  descriptior: Space_Shuttle_Door
+  initial_location: loc_1_1_4
+Ice_cream_cone-77:
+  colour: rgb_66_61_60
+  dimension: dim_0.06_0.09_1
+  descriptior: Ice_cream_cone
+  initial_location: loc_n0_n0_0
+Button_label-78:
+  colour: rgb_197_202_205
+  dimension: dim_0.86_0.28_1
+  descriptior: Button_label
+  initial_location: loc_1_1_3
+Coffee_bean-79:
+  colour: rgb_97_74_58
+  dimension: dim_0.04_0.07_1
+  descriptior: Coffee_bean
+  initial_location: loc_n0_n0_0
+Foam_roller-80:
+  colour: rgb_43_45_49
+  dimension: dim_0.46_0.19_1
+  descriptior: Foam_roller
+  initial_location: loc_0_0_1
+Red_strawberry-81:
+  colour: rgb_114_36_33
+  dimension: dim_0.07_0.13_1
+  descriptior: Red_strawberry
+  initial_location: loc_0_n0_2
+Green_frog-82:
+  colour: rgb_128_129_71
+  dimension: dim_0.11_0.16_1
+  descriptior: Green_frog
+  initial_location: loc_1_1_4
+South_Dakota_Flag-83:
+  colour: rgb_70_46_52
+  dimension: dim_0.88_0.58_1
+  descriptior: South_Dakota_Flag
+  initial_location: loc_0_1_4
+Computer_case-84:
+  colour: rgb_49_49_52
+  dimension: dim_0.46_0.32_1
+  descriptior: Computer_case
+  initial_location: loc_n0_0_0
+Old_book-85:
+  colour: rgb_61_73_90
+  dimension: dim_0.38_0.57_1
+  descriptior: Old_book
+  initial_location: loc_0_0_2
+Speaker_grill-86:
+  colour: rgb_69_66_62
+  dimension: dim_0.38_0.43_1
+  descriptior: Speaker_grill
+  initial_location: loc_0_0_1
+Green_goldfish-87:
+  colour: rgb_143_179_111
+  dimension: dim_0.1_0.28_1
+  descriptior: Green_goldfish
+  initial_location: loc_n0_n0_0
+Seashell_fragment-88:
+  colour: rgb_193_222_216
+  dimension: dim_0.05_0.05_1
+  descriptior: Seashell_fragment
+  initial_location: loc_n0_n0_0
+Matterport_Scanner-89:
+  colour: rgb_51_49_53
+  dimension: dim_0.75_0.53_1
+  descriptior: Matterport_Scanner
+  initial_location: loc_1_n0_2
+Matterport_Scanner-90:
+  colour: rgb_51_48_53
+  dimension: dim_0.43_0.51_1
+  descriptior: Matterport_Scanner
+  initial_location: loc_1_n0_2
+Light_switch-91:
+  colour: rgb_210_217_216
+  dimension: dim_0.86_0.27_1
+  descriptior: Light_switch
+  initial_location: loc_1_0_4
+LEGO_Star_Wars-92:
+  colour: rgb_171_156_164
+  dimension: dim_0.26_0.23_1
+  descriptior: LEGO_Star_Wars
+  initial_location: loc_n0_0_1
+Wooden_table-93:
+  colour: rgb_144_101_57
+  dimension: dim_0.15_0.21_1
+  descriptior: Wooden_table
+  initial_location: loc_n0_n0_0
+Olive_pit-94:
+  colour: rgb_107_82_66
+  dimension: dim_0.04_0.07_1
+  descriptior: Olive_pit
+  initial_location: loc_n0_n0_0
+Paper_airplane-95:
+  colour: rgb_154_142_128
+  dimension: dim_0.27_1.07_1
+  descriptior: Paper_airplane
+  initial_location: loc_n0_0_1
+Ice_cream_cone-96:
+  colour: rgb_154_142_128
+  dimension: dim_0.53_0.58_1
+  descriptior: Ice_cream_cone
+  initial_location: loc_n0_0_1
+Missouri_Flag-97:
+  colour: rgb_80_52_57
+  dimension: dim_0.54_0.42_1
+  descriptior: Missouri_Flag
+  initial_location: loc_0_0_3
+USB_flash_drive-98:
+  colour: rgb_104_96_99
+  dimension: dim_0.25_0.57_1
+  descriptior: USB_flash_drive
+  initial_location: loc_0_n0_2
+Analog_clock-99:
+  colour: rgb_236_236_233
+  dimension: dim_0.25_0.27_1
+  descriptior: Analog_clock
+  initial_location: loc_1_1_3
+Basketball-100:
+  colour: rgb_133_43_39
+  dimension: dim_0.08_0.12_1
+  descriptior: Basketball
+  initial_location: loc_0_n0_2
+Plastic_bottle-101:
+  colour: rgb_190_121_108
+  dimension: dim_0.23_0.07_1
+  descriptior: Plastic_bottle
+  initial_location: loc_0_n0_1
+License_plate_holder-102:
+  colour: rgb_188_180_167
+  dimension: dim_0.16_0.04_1
+  descriptior: License_plate_holder
+  initial_location: loc_n0_0_1
+Car_headlight_assembly-0:
+  colour: rgb_176_168_154
+  dimension: dim_1.64_1.12_1
+  descriptior: Car_headlight_assembly
+  initial_location: loc_5_0_n0
+Ice_cream_cone-1:
+  colour: rgb_42_42_42
+  dimension: dim_0.52_0.4_1
+  descriptior: Ice_cream_cone
+  initial_location: loc_1_n0_1
+Leather-bound_book-3:
+  colour: rgb_32_39_51
+  dimension: dim_0.44_0.57_1
+  descriptior: Leather-bound_book
+  initial_location: loc_2_n0_1
+White_paper_roll-4:
+  colour: rgb_151_146_142
+  dimension: dim_0.26_1.18_1
+  descriptior: White_paper_roll
+  initial_location: loc_5_n0_n0
+Metal_toolbox-5:
+  colour: rgb_126_106_76
+  dimension: dim_1.62_0.85_1
+  descriptior: Metal_toolbox
+  initial_location: loc_4_n0_1
+Cake_box-6:
+  colour: rgb_126_106_76
+  dimension: dim_1.96_1.05_1
+  descriptior: Cake_box
+  initial_location: loc_4_n0_0
+Smartphone_case-7:
+  colour: rgb_32_40_51
+  dimension: dim_0.46_0.78_1
+  descriptior: Smartphone_case
+  initial_location: loc_2_n0_1
+Wooden_block-8:
+  colour: rgb_110_79_48
+  dimension: dim_0.16_0.11_1
+  descriptior: Wooden_block
+  initial_location: loc_1_n0_0
+Shark_fin-9:
+  colour: rgb_37_37_40
+  dimension: dim_0.59_0.45_1
+  descriptior: Shark_fin
+  initial_location: loc_3_0_3
+Toilet_paper-10:
+  colour: rgb_149_147_143
+  dimension: dim_0.87_0.31_1
+  descriptior: Toilet_paper
+  initial_location: loc_5_0_0
+Boot_print-11:
+  colour: rgb_51_49_51
+  dimension: dim_0.38_0.44_1
+  descriptior: Boot_print
+  initial_location: loc_4_1_1
+Wooden_chair_leg-12:
+  colour: rgb_154_141_122
+  dimension: dim_1.18_1.06_1
+  descriptior: Wooden_chair_leg
+  initial_location: loc_5_n0_n0
+Wooden_block-13:
+  colour: rgb_131_101_69
+  dimension: dim_0.7_0.52_1
+  descriptior: Wooden_block
+  initial_location: loc_4_n0_1
+Spinning_pizza_dough-14:
+  colour: rgb_198_202_198
+  dimension: dim_0.26_0.26_1
+  descriptior: Spinning_pizza_dough
+  initial_location: loc_4_1_2
+Nintendo_Switch-15:
+  colour: rgb_21_21_25
+  dimension: dim_0.53_0.4_1
+  descriptior: Nintendo_Switch
+  initial_location: loc_2_n0_1
+Lightbulb_shade-16:
+  colour: rgb_160_174_178
+  dimension: dim_0.86_0.25_1
+  descriptior: Lightbulb_shade
+  initial_location: loc_4_0_2
+Tooth_shape-17:
+  colour: rgb_247_247_246
+  dimension: dim_0.31_2.0_1
+  descriptior: Tooth_shape
+  initial_location: loc_4_1_1
+Kitchen_knife-18:
+  colour: rgb_229_227_224
+  dimension: dim_0.3_2.95_1
+  descriptior: Kitchen_knife
+  initial_location: loc_4_1_1
+Wooden_picture_frame-19:
+  colour: rgb_166_159_148
+  dimension: dim_0.25_0.23_1
+  descriptior: Wooden_picture_frame
+  initial_location: loc_4_0_1
+Shark_fin-20:
+  colour: rgb_37_37_40
+  dimension: dim_1.16_0.49_1
+  descriptior: Shark_fin
+  initial_location: loc_3_0_3
+Red_soda_can-21:
+  colour: rgb_154_76_83
+  dimension: dim_0.17_0.09_1
+  descriptior: Red_soda_can
+  initial_location: loc_1_n0_1
+Whiteboard_drawing-22:
+  colour: rgb_177_169_155
+  dimension: dim_1.44_0.93_1
+  descriptior: Whiteboard_drawing
+  initial_location: loc_5_n0_0
+Nintendo_Switch_Lite-23:
+  colour: rgb_22_29_39
+  dimension: dim_0.35_0.57_1
+  descriptior: Nintendo_Switch_Lite
+  initial_location: loc_2_n0_1
+Desk_drawer-24:
+  colour: rgb_117_97_70
+  dimension: dim_1.64_0.9_1
+  descriptior: Desk_drawer
+  initial_location: loc_4_n1_0
+Car_waxing_applicator-25:
+  colour: rgb_12_17_20
+  dimension: dim_0.41_0.07_1
+  descriptior: Car_waxing_applicator
+  initial_location: loc_1_n0_0
+Coffee_cup-26:
+  colour: rgb_31_31_31
+  dimension: dim_0.5_0.41_1
+  descriptior: Coffee_cup
+  initial_location: loc_1_n0_1
+Under-shelf_light-27:
+  colour: rgb_117_97_70
+  dimension: dim_1.64_1.42_1
+  descriptior: Under-shelf_light
+  initial_location: loc_4_n1_1
+Matterpo_device-28:
+  colour: rgb_15_14_16
+  dimension: dim_0.4_0.4_1
+  descriptior: Matterpo_device
+  initial_location: loc_2_n1_1
+Bat_wing-29:
+  colour: rgb_28_27_31
+  dimension: dim_0.51_0.41_1
+  descriptior: Bat_wing
+  initial_location: loc_3_n0_3
+Wooden_dresser-30:
+  colour: rgb_117_97_70
+  dimension: dim_2.01_1.36_1
+  descriptior: Wooden_dresser
+  initial_location: loc_4_n0_0
+Wall_clock-31:
+  colour: rgb_180_186_181
+  dimension: dim_0.25_0.24_1
+  descriptior: Wall_clock
+  initial_location: loc_4_0_3
+Ceiling_tile-32:
+  colour: rgb_127_115_99
+  dimension: dim_1.11_0.86_1
+  descriptior: Ceiling_tile
+  initial_location: loc_5_n1_0
+Computer_case-33:
+  colour: rgb_111_83_54
+  dimension: dim_0.72_0.53_1
+  descriptior: Computer_case
+  initial_location: loc_4_n1_1
+Interior_door_frame-34:
+  colour: rgb_140_134_131
+  dimension: dim_0.24_0.92_1
+  descriptior: Interior_door_frame
+  initial_location: loc_5_n0_0
+Coca-Cola_Bottle-35:
+  colour: rgb_128_78_71
+  dimension: dim_0.23_0.07_1
+  descriptior: Coca-Cola_Bottle
+  initial_location: loc_1_n0_1
+Hourglass_clock-36:
+  colour: rgb_62_55_53
+  dimension: dim_0.1_0.47_1
+  descriptior: Hourglass_clock
+  initial_location: loc_1_n1_1
+Open_notebook-37:
+  colour: rgb_147_147_145
+  dimension: dim_0.84_0.31_1
+  descriptior: Open_notebook
+  initial_location: loc_5_n0_0
+Circuit_breaker-38:
+  colour: rgb_134_128_105
+  dimension: dim_0.27_0.35_1
+  descriptior: Circuit_breaker
+  initial_location: loc_5_n0_1
+Avocado_half-39:
+  colour: rgb_59_46_36
+  dimension: dim_0.04_0.08_1
+  descriptior: Avocado_half
+  initial_location: loc_1_n0_0
+Skull_fragment-40:
+  colour: rgb_18_18_21
+  dimension: dim_0.28_0.57_1
+  descriptior: Skull_fragment
+  initial_location: loc_5_n1_n0
+9mm_magazine-41:
+  colour: rgb_45_44_45
+  dimension: dim_0.51_0.48_1
+  descriptior: 9mm_magazine
+  initial_location: loc_5_n0_1
+Nvidia_GeForce_RTX-42:
+  colour: rgb_123_117_123
+  dimension: dim_0.28_0.17_1
+  descriptior: Nvidia_GeForce_RTX
+  initial_location: loc_1_0_1
+LED_light_bar-43:
+  colour: rgb_187_177_162
+  dimension: dim_1.3_0.26_1
+  descriptior: LED_light_bar
+  initial_location: loc_5_0_0
+Light_switch-44:
+  colour: rgb_187_177_162
+  dimension: dim_1.91_0.25_1
+  descriptior: Light_switch
+  initial_location: loc_5_0_0
+Yellow_lemon-45:
+  colour: rgb_117_92_3
+  dimension: dim_0.06_0.17_1
+  descriptior: Yellow_lemon
+  initial_location: loc_1_n1_2
+Dark_blue_book-46:
+  colour: rgb_36_42_51
+  dimension: dim_0.35_0.57_1
+  descriptior: Dark_blue_book
+  initial_location: loc_1_n0_2
+Wooden_ruler-47:
+  colour: rgb_115_81_49
+  dimension: dim_0.21_0.17_1
+  descriptior: Wooden_ruler
+  initial_location: loc_0_n0_1
+Small_cabinet-48:
+  colour: rgb_140_117_85
+  dimension: dim_1.64_1.08_1
+  descriptior: Small_cabinet
+  initial_location: loc_4_n0_1
+Matterport_Scanner-49:
+  colour: rgb_23_24_28
+  dimension: dim_0.6_0.45_1
+  descriptior: Matterport_Scanner
+  initial_location: loc_2_n1_2
+Wooden_cabinet-50:
+  colour: rgb_140_117_85
+  dimension: dim_1.73_1.35_1
+  descriptior: Wooden_cabinet
+  initial_location: loc_4_n0_1
+Matterport_Scanner-51:
+  colour: rgb_22_23_27
+  dimension: dim_0.4_0.45_1
+  descriptior: Matterport_Scanner
+  initial_location: loc_2_n1_2
+Bat_wing-52:
+  colour: rgb_36_36_40
+  dimension: dim_0.56_0.45_1
+  descriptior: Bat_wing
+  initial_location: loc_3_0_4
+Wooden_block-53:
+  colour: rgb_45_45_45
+  dimension: dim_0.68_1.15_1
+  descriptior: Wooden_block
+  initial_location: loc_1_n0_2
+Speaker_cube-54:
+  colour: rgb_44_44_44
+  dimension: dim_0.39_0.52_1
+  descriptior: Speaker_cube
+  initial_location: loc_1_n0_2
+Computer_Tower-55:
+  colour: rgb_139_104_69
+  dimension: dim_0.71_0.51_1
+  descriptior: Computer_Tower
+  initial_location: loc_4_n0_2
+PlayStation_5-56:
+  colour: rgb_176_170_172
+  dimension: dim_0.22_0.3_1
+  descriptior: PlayStation_5
+  initial_location: loc_1_0_2
+Puzzle_piece-57:
+  colour: rgb_44_44_44
+  dimension: dim_0.53_0.7_1
+  descriptior: Puzzle_piece
+  initial_location: loc_1_n0_2
+Nightstand_drawer-58:
+  colour: rgb_141_117_86
+  dimension: dim_1.64_1.81_1
+  descriptior: Nightstand_drawer
+  initial_location: loc_4_n0_1
+Wristwatch-59:
+  colour: rgb_187_193_190
+  dimension: dim_0.26_0.24_1
+  descriptior: Wristwatch
+  initial_location: loc_3_0_3
+Wooden_door-60:
+  colour: rgb_159_168_177
+  dimension: dim_0.46_0.88_1
+  descriptior: Wooden_door
+  initial_location: loc_4_n0_3
+Airplane_seatback-61:
+  colour: rgb_205_198_190
+  dimension: dim_1.69_0.82_1
+  descriptior: Airplane_seatback
+  initial_location: loc_1_0_3
+Grey_cube-62:
+  colour: rgb_148_165_171
+  dimension: dim_0.83_0.66_1
+  descriptior: Grey_cube
+  initial_location: loc_4_0_3
+Concrete_block-63:
+  colour: rgb_51_49_53
+  dimension: dim_0.42_0.54_1
+  descriptior: Concrete_block
+  initial_location: loc_5_0_2
+Nvidia_RTX_4070-64:
+  colour: rgb_125_119_125
+  dimension: dim_0.33_0.26_1
+  descriptior: Nvidia_RTX_4070
+  initial_location: loc_1_0_2
+Battery_tube-65:
+  colour: rgb_148_165_171
+  dimension: dim_0.83_0.25_1
+  descriptior: Battery_tube
+  initial_location: loc_4_0_3
+Stack_of_papers-66:
+  colour: rgb_186_180_170
+  dimension: dim_0.27_0.25_1
+  descriptior: Stack_of_papers
+  initial_location: loc_4_0_2
+Manifold_binder-67:
+  colour: rgb_168_167_165
+  dimension: dim_1.16_0.38_1
+  descriptior: Manifold_binder
+  initial_location: loc_5_0_1
+Wooden_window_sill-68:
+  colour: rgb_149_143_140
+  dimension: dim_0.24_0.6_1
+  descriptior: Wooden_window_sill
+  initial_location: loc_5_n0_1
+Spacecraft_Voyager_1-69:
+  colour: rgb_29_29_33
+  dimension: dim_0.21_0.26_1
+  descriptior: Spacecraft_Voyager_1
+  initial_location: loc_5_n1_0
+Coca-Cola_bottle-70:
+  colour: rgb_146_92_91
+  dimension: dim_0.24_0.08_1
+  descriptior: Coca-Cola_bottle
+  initial_location: loc_1_n0_1
+Electrical_panel-71:
+  colour: rgb_145_140_117
+  dimension: dim_0.28_0.36_1
+  descriptior: Electrical_panel
+  initial_location: loc_4_0_2
+Red_basketball-72:
+  colour: rgb_89_27_25
+  dimension: dim_0.06_0.11_1
+  descriptior: Red_basketball
+  initial_location: loc_1_n1_2
+Gaming_mouse-73:
+  colour: rgb_31_34_38
+  dimension: dim_0.59_0.2_1
+  descriptior: Gaming_mouse
+  initial_location: loc_1_n0_1
+Tile_sample-74:
+  colour: rgb_192_182_167
+  dimension: dim_1.42_0.53_1
+  descriptior: Tile_sample
+  initial_location: loc_4_n2_0
+Puzzle_piece-75:
+  colour: rgb_40_43_42
+  dimension: dim_0.51_0.74_1
+  descriptior: Puzzle_piece
+  initial_location: loc_1_n1_2
+Red_stapler-76:
+  colour: rgb_31_37_46
+  dimension: dim_0.4_0.88_1
+  descriptior: Red_stapler
+  initial_location: loc_1_n2_2
+Black_sunglasses-77:
+  colour: rgb_31_38_47
+  dimension: dim_0.36_0.58_1
+  descriptior: Black_sunglasses
+  initial_location: loc_1_n2_2
+Baby_diaper-78:
+  colour: rgb_200_194_185
+  dimension: dim_1.83_0.91_1
+  descriptior: Baby_diaper
+  initial_location: loc_1_n2_3
+Wooden_block-79:
+  colour: rgb_146_121_90
+  dimension: dim_0.94_1.12_1
+  descriptior: Wooden_block
+  initial_location: loc_3_n3_1
+Optical_fiber-80:
+  colour: rgb_144_157_163
+  dimension: dim_0.95_0.38_1
+  descriptior: Optical_fiber
+  initial_location: loc_3_n3_3
+White_sheet-81:
+  colour: rgb_149_153_164
+  dimension: dim_0.31_0.91_1
+  descriptior: White_sheet
+  initial_location: loc_2_n4_2
+Chalk_stick-82:
+  colour: rgb_250_250_249
+  dimension: dim_0.24_1.91_1
+  descriptior: Chalk_stick
+  initial_location: loc_3_n0_1
+Red_firetruck-83:
+  colour: rgb_134_70_74
+  dimension: dim_0.08_0.08_1
+  descriptior: Red_firetruck
+  initial_location: loc_0_n2_2
+Wooden_drawer_front-84:
+  colour: rgb_145_121_90
+  dimension: dim_0.97_1.32_1
+  descriptior: Wooden_drawer_front
+  initial_location: loc_3_n3_1
+Bluetooth_speaker-85:
+  colour: rgb_50_50_52
+  dimension: dim_0.37_0.51_1
+  descriptior: Bluetooth_speaker
+  initial_location: loc_4_n3_2
+Candle_holder-86:
+  colour: rgb_249_250_247
+  dimension: dim_0.23_1.85_1
+  descriptior: Candle_holder
+  initial_location: loc_3_n2_2
+Moon_phase-87:
+  colour: rgb_193_197_192
+  dimension: dim_0.27_0.24_1
+  descriptior: Moon_phase
+  initial_location: loc_3_n3_3
+Sandcastle_detail-88:
+  colour: rgb_202_191_183
+  dimension: dim_0.12_0.3_1
+  descriptior: Sandcastle_detail
+  initial_location: loc_3_n4_1
+Rock_formation-89:
+  colour: rgb_48_48_46
+  dimension: dim_0.43_0.1_1
+  descriptior: Rock_formation
+  initial_location: loc_0_n1_2
+Lighter_object-90:
+  colour: rgb_35_41_49
+  dimension: dim_0.67_0.7_1
+  descriptior: Lighter_object
+  initial_location: loc_1_n2_2
+Lighter_fluid-91:
+  colour: rgb_35_41_49
+  dimension: dim_0.55_1.2_1
+  descriptior: Lighter_fluid
+  initial_location: loc_1_n2_2
+Yellow_can-92:
+  colour: rgb_143_135_114
+  dimension: dim_0.31_0.36_1
+  descriptior: Yellow_can
+  initial_location: loc_3_n3_2
+Shark_fin-93:
+  colour: rgb_61_64_67
+  dimension: dim_0.15_0.18_1
+  descriptior: Shark_fin
+  initial_location: loc_1_n2_2
+Ice_cube-94:
+  colour: rgb_177_168_157
+  dimension: dim_0.39_0.3_1
+  descriptior: Ice_cube
+  initial_location: loc_4_n2_1
+Blue_whale-95:
+  colour: rgb_165_161_156
+  dimension: dim_0.33_0.31_1
+  descriptior: Blue_whale
+  initial_location: loc_5_n3_1
+White_building_block-96:
+  colour: rgb_188_180_168
+  dimension: dim_1.6_0.83_1
+  descriptior: White_building_block
+  initial_location: loc_5_0_0
+Car_headlight_housing-97:
+  colour: rgb_188_180_168
+  dimension: dim_1.33_0.56_1
+  descriptior: Car_headlight_housing
+  initial_location: loc_4_0_0
+Yellow_flower-98:
+  colour: rgb_113_88_2
+  dimension: dim_0.07_0.2_1
+  descriptior: Yellow_flower
+  initial_location: loc_1_n1_2
+Notebook_cover-99:
+  colour: rgb_30_35_45
+  dimension: dim_0.33_0.58_1
+  descriptior: Notebook_cover
+  initial_location: loc_1_n0_2
+Coffee_table-100:
+  colour: rgb_133_112_81
+  dimension: dim_1.65_1.05_1
+  descriptior: Coffee_table
+  initial_location: loc_4_n0_1
+Bumper_cover-101:
+  colour: rgb_152_147_147
+  dimension: dim_0.28_0.9_1
+  descriptior: Bumper_cover
+  initial_location: loc_4_n0_0
+Bat_silhouette-102:
+  colour: rgb_31_32_37
+  dimension: dim_0.49_0.39_1
+  descriptior: Bat_silhouette
+  initial_location: loc_2_0_3
+Matterport_Cube-103:
+  colour: rgb_21_22_25
+  dimension: dim_0.61_0.47_1
+  descriptior: Matterport_Cube
+  initial_location: loc_2_n1_2
+Matterport_Scanner-104:
+  colour: rgb_21_22_25
+  dimension: dim_0.4_0.47_1
+  descriptior: Matterport_Scanner
+  initial_location: loc_2_n1_2
+Wooden_dresser-105:
+  colour: rgb_133_111_81
+  dimension: dim_1.65_1.52_1
+  descriptior: Wooden_dresser
+  initial_location: loc_4_n0_1
+White_refrigerator-106:
+  colour: rgb_160_160_159
+  dimension: dim_0.86_0.35_1
+  descriptior: White_refrigerator
+  initial_location: loc_5_n0_1
+Wooden_shelf-107:
+  colour: rgb_109_77_46
+  dimension: dim_0.25_0.08_1
+  descriptior: Wooden_shelf
+  initial_location: loc_0_n0_1
+Baby_sock-108:
+  colour: rgb_182_180_181
+  dimension: dim_0.23_0.11_1
+  descriptior: Baby_sock
+  initial_location: loc_2_n0_0
+White_refrigerator-109:
+  colour: rgb_159_159_158
+  dimension: dim_0.84_1.06_1
+  descriptior: White_refrigerator
+  initial_location: loc_4_n0_1
+Pencil_sharpener-110:
+  colour: rgb_38_38_40
+  dimension: dim_0.43_0.53_1
+  descriptior: Pencil_sharpener
+  initial_location: loc_1_n0_2
+Wooden_sailboat-111:
+  colour: rgb_134_154_163
+  dimension: dim_0.82_0.23_1
+  descriptior: Wooden_sailboat
+  initial_location: loc_4_0_3
+SD_card_case-112:
+  colour: rgb_44_46_49
+  dimension: dim_0.56_0.51_1
+  descriptior: SD_card_case
+  initial_location: loc_5_0_2
+Gaming_Mouse-113:
+  colour: rgb_181_176_167
+  dimension: dim_0.27_0.24_1
+  descriptior: Gaming_Mouse
+  initial_location: loc_4_0_2
+Wall_clock-114:
+  colour: rgb_180_187_187
+  dimension: dim_0.24_0.25_1
+  descriptior: Wall_clock
+  initial_location: loc_3_0_3
+Knife_blade-115:
+  colour: rgb_25_26_29
+  dimension: dim_0.25_0.44_1
+  descriptior: Knife_blade
+  initial_location: loc_4_n1_0
+Metal_panel-116:
+  colour: rgb_146_155_166
+  dimension: dim_0.36_0.91_1
+  descriptior: Metal_panel
+  initial_location: loc_4_n0_3
+Gaming_monitor-117:
+  colour: rgb_123_116_126
+  dimension: dim_0.33_0.15_1
+  descriptior: Gaming_monitor
+  initial_location: loc_1_0_2
+Shark_fin-118:
+  colour: rgb_29_31_35
+  dimension: dim_0.44_0.12_1
+  descriptior: Shark_fin
+  initial_location: loc_2_n0_0
+Red_rose-119:
+  colour: rgb_81_22_23
+  dimension: dim_0.06_0.11_1
+  descriptior: Red_rose
+  initial_location: loc_1_n1_2
+Baby_bib-120:
+  colour: rgb_180_178_178
+  dimension: dim_0.71_0.22_1
+  descriptior: Baby_bib
+  initial_location: loc_4_n0_0
+Blank_sheet_of-121:
+  colour: rgb_201_189_172
+  dimension: dim_0.2_0.41_1
+  descriptior: Blank_sheet_of
+  initial_location: loc_5_1_2
+Red_soda_bottle-122:
+  colour: rgb_133_84_84
+  dimension: dim_0.23_0.14_1
+  descriptior: Red_soda_bottle
+  initial_location: loc_1_n0_2
+Blank_notebook-123:
+  colour: rgb_181_168_147
+  dimension: dim_0.2_0.41_1
+  descriptior: Blank_notebook
+  initial_location: loc_5_1_1
+Open_notebook-124:
+  colour: rgb_198_187_171
+  dimension: dim_0.2_0.41_1
+  descriptior: Open_notebook
+  initial_location: loc_5_1_2
+Spider_footprint-125:
+  colour: rgb_183_178_181
+  dimension: dim_0.24_0.23_1
+  descriptior: Spider_footprint
+  initial_location: loc_1_0_2
+Wooden_window_frame-126:
+  colour: rgb_190_189_187
+  dimension: dim_1.98_2.65_1
+  descriptior: Wooden_window_frame
+  initial_location: loc_4_0_3
+Car_headlight_bracket-127:
+  colour: rgb_206_199_187
+  dimension: dim_1.6_1.19_1
+  descriptior: Car_headlight_bracket
+  initial_location: loc_4_n0_0
+Shark_tooth-128:
+  colour: rgb_22_27_34
+  dimension: dim_0.34_0.4_1
+  descriptior: Shark_tooth
+  initial_location: loc_2_n1_0
+Glowing_light_source-129:
+  colour: rgb_246_246_248
+  dimension: dim_0.52_0.18_1
+  descriptior: Glowing_light_source
+  initial_location: loc_3_n1_0
+Sticky_notes-130:
+  colour: rgb_196_191_185
+  dimension: dim_1.94_0.64_1
+  descriptior: Sticky_notes
+  initial_location: loc_2_n0_4
+Sheet_of_paper-131:
+  colour: rgb_197_191_186
+  dimension: dim_1.45_0.57_1
+  descriptior: Sheet_of_paper
+  initial_location: loc_2_n0_4
+Wooden_drawer-132:
+  colour: rgb_143_121_90
+  dimension: dim_1.7_1.0_1
+  descriptior: Wooden_drawer
+  initial_location: loc_4_n2_1
+Wooden_briefcase-133:
+  colour: rgb_142_106_75
+  dimension: dim_0.73_0.47_1
+  descriptior: Wooden_briefcase
+  initial_location: loc_3_n2_2
+Dark_gray_box-134:
+  colour: rgb_44_44_47
+  dimension: dim_0.35_0.15_1
+  descriptior: Dark_gray_box
+  initial_location: loc_1_n1_2
+Wooden_bookshelf-135:
+  colour: rgb_143_121_89
+  dimension: dim_1.7_1.15_1
+  descriptior: Wooden_bookshelf
+  initial_location: loc_3_n2_1
+Manta_Ray-136:
+  colour: rgb_39_40_46
+  dimension: dim_0.56_0.49_1
+  descriptior: Manta_Ray
+  initial_location: loc_3_n1_4
+Lighter_case-137:
+  colour: rgb_35_41_52
+  dimension: dim_0.35_0.7_1
+  descriptior: Lighter_case
+  initial_location: loc_1_n1_2
+Wall_clock-138:
+  colour: rgb_191_197_196
+  dimension: dim_0.26_0.26_1
+  descriptior: Wall_clock
+  initial_location: loc_4_n0_3
+Speaker_phone-139:
+  colour: rgb_50_52_55
+  dimension: dim_0.35_0.47_1
+  descriptior: Speaker_phone
+  initial_location: loc_4_n1_2
+Light_bulb-140:
+  colour: rgb_252_252_252
+  dimension: dim_0.34_2.7_1
+  descriptior: Light_bulb
+  initial_location: loc_3_0_1
+Roll_of_paper-141:
+  colour: rgb_157_165_177
+  dimension: dim_0.34_0.93_1
+  descriptior: Roll_of_paper
+  initial_location: loc_3_n2_3
+Black_wallet-142:
+  colour: rgb_10_14_21
+  dimension: dim_0.12_0.45_1
+  descriptior: Black_wallet
+  initial_location: loc_2_n1_2
+White_paper-143:
+  colour: rgb_172_172_171
+  dimension: dim_1.05_0.37_1
+  descriptior: White_paper
+  initial_location: loc_4_n1_1
+Airplane_wing-144:
+  colour: rgb_253_253_252
+  dimension: dim_0.32_1.8_1
+  descriptior: Airplane_wing
+  initial_location: loc_2_0_1
+Snowy_Owl-145:
+  colour: rgb_153_147_139
+  dimension: dim_0.6_0.23_1
+  descriptior: Snowy_Owl
+  initial_location: loc_5_n1_1
+White_crayon-146:
+  colour: rgb_252_252_251
+  dimension: dim_0.32_1.85_1
+  descriptior: White_crayon
+  initial_location: loc_4_n0_2
+Person's_head-147:
+  colour: rgb_134_131_135
+  dimension: dim_0.67_0.41_1
+  descriptior: Person's_head
+  initial_location: loc_2_n1_0
+White_ceramic_mug-148:
+  colour: rgb_189_184_175
+  dimension: dim_0.24_0.22_1
+  descriptior: White_ceramic_mug
+  initial_location: loc_4_n1_2
+Yellow_lemon-149:
+  colour: rgb_123_97_2
+  dimension: dim_0.1_0.19_1
+  descriptior: Yellow_lemon
+  initial_location: loc_1_n1_2
+Sheet_of_paper-150:
+  colour: rgb_190_183_170
+  dimension: dim_1.57_0.82_1
+  descriptior: Sheet_of_paper
+  initial_location: loc_4_0_0
+Car_door_panel-151:
+  colour: rgb_191_183_171
+  dimension: dim_1.34_0.6_1
+  descriptior: Car_door_panel
+  initial_location: loc_4_0_0
+Blue_notebook-152:
+  colour: rgb_31_37_46
+  dimension: dim_0.34_0.59_1
+  descriptior: Blue_notebook
+  initial_location: loc_1_n0_2
+Wooden_drawer_unit-153:
+  colour: rgb_137_115_84
+  dimension: dim_1.63_1.45_1
+  descriptior: Wooden_drawer_unit
+  initial_location: loc_4_n0_1
+Matterport_scanner-154:
+  colour: rgb_21_22_26
+  dimension: dim_0.4_0.48_1
+  descriptior: Matterport_scanner
+  initial_location: loc_2_n1_2
+Wall_molding-155:
+  colour: rgb_165_165_164
+  dimension: dim_0.9_0.36_1
+  descriptior: Wall_molding
+  initial_location: loc_5_0_1
+Under_cabinet_light-156:
+  colour: rgb_137_115_84
+  dimension: dim_1.65_0.77_1
+  descriptior: Under_cabinet_light
+  initial_location: loc_4_n0_1
+Storage_chest-157:
+  colour: rgb_138_115_84
+  dimension: dim_1.64_1.14_1
+  descriptior: Storage_chest
+  initial_location: loc_4_n0_1
+Motorcycle_helmet-158:
+  colour: rgb_32_34_38
+  dimension: dim_0.53_0.43_1
+  descriptior: Motorcycle_helmet
+  initial_location: loc_3_0_4
+Smartphone_camera_cutout-159:
+  colour: rgb_31_37_46
+  dimension: dim_0.35_1.19_1
+  descriptior: Smartphone_camera_cutout
+  initial_location: loc_1_n0_2
+Digital_clock-160:
+  colour: rgb_178_184_184
+  dimension: dim_0.25_0.25_1
+  descriptior: Digital_clock
+  initial_location: loc_3_1_3
+Triangular_sail-161:
+  colour: rgb_32_34_38
+  dimension: dim_0.91_0.58_1
+  descriptior: Triangular_sail
+  initial_location: loc_3_0_4
+Ceramic_tile-162:
+  colour: rgb_139_155_160
+  dimension: dim_0.84_0.39_1
+  descriptior: Ceramic_tile
+  initial_location: loc_3_0_3
+Window_trim-163:
+  colour: rgb_158_153_153
+  dimension: dim_0.41_0.91_1
+  descriptior: Window_trim
+  initial_location: loc_4_n0_0
+Piece_of_paper-164:
+  colour: rgb_153_163_175
+  dimension: dim_0.31_0.9_1
+  descriptior: Piece_of_paper
+  initial_location: loc_4_n0_3
+Red_Notebook-165:
+  colour: rgb_165_164_164
+  dimension: dim_0.88_1.05_1
+  descriptior: Red_Notebook
+  initial_location: loc_4_0_1
+SSD_storage_unit-166:
+  colour: rgb_47_47_51
+  dimension: dim_0.49_0.53_1
+  descriptior: SSD_storage_unit
+  initial_location: loc_5_1_2
+Yellow_rubber_duck-167:
+  colour: rgb_113_80_48
+  dimension: dim_0.47_0.38_1
+  descriptior: Yellow_rubber_duck
+  initial_location: loc_1_n1_2
+White_socks-168:
+  colour: rgb_184_182_183
+  dimension: dim_0.22_0.12_1
+  descriptior: White_socks
+  initial_location: loc_2_n0_0
+Baseball_glove-169:
+  colour: rgb_84_84_86
+  dimension: dim_0.85_0.13_1
+  descriptior: Baseball_glove
+  initial_location: loc_2_n0_0
+Digital_camera_lens-170:
+  colour: rgb_182_177_170
+  dimension: dim_0.26_0.23_1
+  descriptior: Digital_camera_lens
+  initial_location: loc_4_0_2
+Breadboard_circuit-171:
+  colour: rgb_143_137_130
+  dimension: dim_0.63_0.23_1
+  descriptior: Breadboard_circuit
+  initial_location: loc_5_0_1
+White_sock-172:
+  colour: rgb_175_172_171
+  dimension: dim_0.82_0.23_1
+  descriptior: White_sock
+  initial_location: loc_4_n0_0
+Rolling_cabinet-0:
+  colour: rgb_146_123_93
+  dimension: dim_1.68_1.18_1
+  descriptior: Rolling_cabinet
+  initial_location: loc_2_n0_2
+Dark_book-1:
+  colour: rgb_48_57_72
+  dimension: dim_0.35_0.61_1
+  descriptior: Dark_book
+  initial_location: loc_0_n0_2
+Rolling_file_cabinet-2:
+  colour: rgb_146_123_93
+  dimension: dim_1.67_1.11_1
+  descriptior: Rolling_file_cabinet
+  initial_location: loc_2_n0_2
+Computer_monitor-3:
+  colour: rgb_146_123_93
+  dimension: dim_1.96_0.84_1
+  descriptior: Computer_monitor
+  initial_location: loc_2_n0_2
+Rolling_pin-4:
+  colour: rgb_27_31_38
+  dimension: dim_0.37_0.09_1
+  descriptior: Rolling_pin
+  initial_location: loc_n0_n0_1
+Matterport_scanner-5:
+  colour: rgb_28_30_36
+  dimension: dim_0.41_0.46_1
+  descriptior: Matterport_scanner
+  initial_location: loc_0_n0_2
+Chocolate_bar-6:
+  colour: rgb_99_71_46
+  dimension: dim_0.15_0.22_1
+  descriptior: Chocolate_bar
+  initial_location: loc_n0_n0_1
+Wooden_cabinet-7:
+  colour: rgb_146_123_93
+  dimension: dim_1.97_1.43_1
+  descriptior: Wooden_cabinet
+  initial_location: loc_2_n0_2
+Samsung_TV-8:
+  colour: rgb_44_44_44
+  dimension: dim_0.41_0.62_1
+  descriptior: Samsung_TV
+  initial_location: loc_n0_n0_2
+Blue_notebook-9:
+  colour: rgb_41_50_65
+  dimension: dim_0.33_1.11_1
+  descriptior: Blue_notebook
+  initial_location: loc_n0_n0_2
+Nvidia_RTX_4090-10:
+  colour: rgb_128_125_125
+  dimension: dim_0.18_0.33_1
+  descriptior: Nvidia_RTX_4090
+  initial_location: loc_n0_0_2
+Eyeglasses_case-11:
+  colour: rgb_184_178_180
+  dimension: dim_0.23_0.28_1
+  descriptior: Eyeglasses_case
+  initial_location: loc_n0_0_2
+White_sheet-12:
+  colour: rgb_188_183_172
+  dimension: dim_0.23_0.22_1
+  descriptior: White_sheet
+  initial_location: loc_2_0_3
+Nintendo_64-13:
+  colour: rgb_141_130_143
+  dimension: dim_0.2_0.11_1
+  descriptior: Nintendo_64
+  initial_location: loc_n0_0_1
+Wooden_dresser-14:
+  colour: rgb_146_123_93
+  dimension: dim_2.61_3.25_1
+  descriptior: Wooden_dresser
+  initial_location: loc_2_n0_4
+Open_book-15:
+  colour: rgb_169_168_167
+  dimension: dim_0.83_0.34_1
+  descriptior: Open_book
+  initial_location: loc_3_n0_2
+Tesla_Model_3-16:
+  colour: rgb_49_47_51
+  dimension: dim_0.4_0.53_1
+  descriptior: Tesla_Model_3
+  initial_location: loc_3_0_3
+Car_bumper-17:
+  colour: rgb_50_48_47
+  dimension: dim_0.63_0.12_1
+  descriptior: Car_bumper
+  initial_location: loc_n0_0_2
+Wall_clock-18:
+  colour: rgb_189_194_190
+  dimension: dim_0.26_0.25_1
+  descriptior: Wall_clock
+  initial_location: loc_1_1_4
+Whiteboard_sketch-19:
+  colour: rgb_207_201_192
+  dimension: dim_1.89_0.85_1
+  descriptior: Whiteboard_sketch
+  initial_location: loc_n0_0_3
+Soda_bottle-20:
+  colour: rgb_164_107_107
+  dimension: dim_0.28_0.09_1
+  descriptior: Soda_bottle
+  initial_location: loc_n0_n0_2
+Eskimo_pie-21:
+  colour: rgb_174_166_153
+  dimension: dim_0.42_0.15_1
+  descriptior: Eskimo_pie
+  initial_location: loc_4_0_3
+Wooden_dowel-22:
+  colour: rgb_253_253_252
+  dimension: dim_0.22_1.89_1
+  descriptior: Wooden_dowel
+  initial_location: loc_2_1_3
+Sliced_tomato-23:
+  colour: rgb_101_33_34
+  dimension: dim_0.07_0.12_1
+  descriptior: Sliced_tomato
+  initial_location: loc_0_n1_2
+USB_flash_drive-24:
+  colour: rgb_78_75_81
+  dimension: dim_0.19_0.55_1
+  descriptior: USB_flash_drive
+  initial_location: loc_n0_n0_2
+Drawer_slide-25:
+  colour: rgb_165_178_197
+  dimension: dim_0.31_0.95_1
+  descriptior: Drawer_slide
+  initial_location: loc_1_n0_4
+Pill_tablet-0:
+  colour: rgb_184_208_199
+  dimension: dim_0.07_0.19_1
+  descriptior: Pill_tablet
+  initial_location: loc_n0_n0_0
+Red_Nintendo_Switch-2:
+  colour: rgb_60_69_109
+  dimension: dim_0.86_0.29_1
+  descriptior: Red_Nintendo_Switch
+  initial_location: loc_n0_n0_0
+Old_book-3:
+  colour: rgb_48_57_71
+  dimension: dim_0.7_0.61_1
+  descriptior: Old_book
+  initial_location: loc_0_n0_2
+Portable_Bluetooth_Speaker-4:
+  colour: rgb_40_41_44
+  dimension: dim_0.47_0.33_1
+  descriptior: Portable_Bluetooth_Speaker
+  initial_location: loc_n0_n0_1
+Smartphone_camera_flash-5:
+  colour: rgb_55_55_52
+  dimension: dim_0.38_0.46_1
+  descriptior: Smartphone_camera_flash
+  initial_location: loc_n0_n0_2
+Glass_bottle-6:
+  colour: rgb_157_147_154
+  dimension: dim_0.24_0.23_1
+  descriptior: Glass_bottle
+  initial_location: loc_n0_n0_2
+Red_GameCube-7:
+  colour: rgb_60_69_108
+  dimension: dim_1.47_1.19_1
+  descriptior: Red_GameCube
+  initial_location: loc_n0_n0_1
+Portable_Bluetooth_speaker-8:
+  colour: rgb_40_41_44
+  dimension: dim_0.49_0.59_1
+  descriptior: Portable_Bluetooth_speaker
+  initial_location: loc_n0_n0_1
+Pills_in_box-9:
+  colour: rgb_157_147_153
+  dimension: dim_0.29_0.43_1
+  descriptior: Pills_in_box
+  initial_location: loc_n0_n0_2
+Waterport_case-10:
+  colour: rgb_22_26_32
+  dimension: dim_0.18_0.22_1
+  descriptior: Waterport_case
+  initial_location: loc_0_n1_2
+Security_door-11:
+  colour: rgb_182_144_99
+  dimension: dim_1.24_1.26_1
+  descriptior: Security_door
+  initial_location: loc_1_n0_4
+Green_bean_sprout-12:
+  colour: rgb_128_171_116
+  dimension: dim_0.07_0.26_1
+  descriptior: Green_bean_sprout
+  initial_location: loc_n0_n0_1
+Eye_drops-13:
+  colour: rgb_200_195_193
+  dimension: dim_0.22_0.27_1
+  descriptior: Eye_drops
+  initial_location: loc_n0_n0_2
+Wooden_chair-14:
+  colour: rgb_97_68_45
+  dimension: dim_0.11_0.22_1
+  descriptior: Wooden_chair
+  initial_location: loc_n0_n0_1
+Kitchen_knife-15:
+  colour: rgb_52_49_51
+  dimension: dim_0.08_0.2_1
+  descriptior: Kitchen_knife
+  initial_location: loc_n0_n0_0
+Whiteboard_marker-16:
+  colour: rgb_97_89_90
+  dimension: dim_0.08_0.28_1
+  descriptior: Whiteboard_marker
+  initial_location: loc_0_n0_1
+Wall_clock-17:
+  colour: rgb_225_224_223
+  dimension: dim_0.24_0.28_1
+  descriptior: Wall_clock
+  initial_location: loc_1_0_4
+Wooden_molding-18:
+  colour: rgb_202_160_98
+  dimension: dim_0.09_0.45_1
+  descriptior: Wooden_molding
+  initial_location: loc_n0_n0_0
+Cheese_wedge-19:
+  colour: rgb_208_192_170
+  dimension: dim_0.15_0.49_1
+  descriptior: Cheese_wedge
+  initial_location: loc_0_1_5
+PCIe_expansion_card-20:
+  colour: rgb_133_132_129
+  dimension: dim_0.31_0.27_1
+  descriptior: PCIe_expansion_card
+  initial_location: loc_n0_0_2
+Paper_towel-21:
+  colour: rgb_183_193_213
+  dimension: dim_0.26_0.5_1
+  descriptior: Paper_towel
+  initial_location: loc_1_n0_3
+Architectural_molding-22:
+  colour: rgb_115_107_96
+  dimension: dim_0.24_0.29_1
+  descriptior: Architectural_molding
+  initial_location: loc_n0_n0_1
