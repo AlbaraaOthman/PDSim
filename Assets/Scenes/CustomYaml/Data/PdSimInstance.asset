@@ -13,25 +13,29 @@ MonoBehaviour:
   m_Name: PdSimInstance
   m_EditorClassIdentifier: 
   objects:
-  - name: ItemB1
+  - name: Man_in_sweater-0
     type: Bricks
-  - name: loc_10_10_10
+  - name: loc_2_n0_0
     type: Location
-  - name: ItemB2
+  - name: Computer_desk-1
     type: Bricks
-  - name: loc_1_3_5
+  - name: loc_3_n1_1
     type: Location
-  - name: ItemB3
+  - name: Car_door_panel-2
     type: Bricks
-  - name: loc_18_5_2
+  - name: loc_4_n0_0
     type: Location
-  - name: ItemB4
+  - name: Half_Moon-3
     type: Bricks
-  - name: loc_2_1_6
+  - name: loc_1_n0_0
     type: Location
-  - name: ItemB5
+  - name: Wooden_dresser-4
     type: Bricks
-  - name: loc_7_0_6
+  - name: loc_3_n2_1
+    type: Location
+  - name: Man_in_suit-5
+    type: Bricks
+  - name: loc_2_n1_2
     type: Location
   init:
   - value:
@@ -39,126 +43,129 @@ MonoBehaviour:
       valueSymbol: True
     fluentName: clear
     parameters:
-    - ItemB1
+    - Man_in_sweater-0
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: not_on_something
     parameters:
-    - ItemB1
+    - Man_in_sweater-0
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: brick_at
     parameters:
-    - ItemB1
-    - loc_10_10_10
+    - Man_in_sweater-0
+    - loc_2_n0_0
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: clear
     parameters:
-    - ItemB2
+    - Computer_desk-1
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: not_on_something
     parameters:
-    - ItemB2
+    - Computer_desk-1
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: brick_at
     parameters:
-    - ItemB2
-    - loc_1_3_5
+    - Computer_desk-1
+    - loc_3_n1_1
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: clear
     parameters:
-    - ItemB3
+    - Car_door_panel-2
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: not_on_something
     parameters:
-    - ItemB3
+    - Car_door_panel-2
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: brick_at
     parameters:
-    - ItemB3
-    - loc_18_5_2
+    - Car_door_panel-2
+    - loc_4_n0_0
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: clear
     parameters:
-    - ItemB4
+    - Half_Moon-3
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: not_on_something
     parameters:
-    - ItemB4
+    - Half_Moon-3
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: brick_at
     parameters:
-    - ItemB4
-    - loc_2_1_6
+    - Half_Moon-3
+    - loc_1_n0_0
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: clear
     parameters:
-    - ItemB5
+    - Wooden_dresser-4
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: not_on_something
     parameters:
-    - ItemB5
+    - Wooden_dresser-4
   - value:
       contentCase: 4
       valueSymbol: True
     fluentName: brick_at
     parameters:
-    - ItemB5
-    - loc_7_0_6
+    - Wooden_dresser-4
+    - loc_3_n2_1
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: clear
+    parameters:
+    - Man_in_suit-5
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: not_on_something
+    parameters:
+    - Man_in_suit-5
+  - value:
+      contentCase: 4
+      valueSymbol: True
+    fluentName: brick_at
+    parameters:
+    - Man_in_suit-5
+    - loc_2_n1_2
   plan:
   - id: 
     name: move
     parameters:
-    - ItemB3
-    - loc_18_5_2
-    - loc_7_0_6
-    startTime: -1
-    endTime: -1
-  - id: 
-    name: move
-    parameters:
-    - ItemB1
-    - loc_10_10_10
-    - loc_7_0_6
+    - Car_door_panel-2
+    - loc_4_n0_0
+    - loc_2_n1_2
     startTime: -1
     endTime: -1
   - id: 
     name: move_on
     parameters:
-    - ItemB3
-    - ItemB5
-    - loc_7_0_6
-    startTime: -1
-    endTime: -1
-  - id: 
-    name: move_on
-    parameters:
-    - ItemB1
-    - ItemB3
-    - loc_7_0_6
+    - Man_in_suit-5
+    - Car_door_panel-2
+    - loc_2_n1_2
     startTime: -1
     endTime: -1

@@ -39,6 +39,12 @@ namespace PDSim.Simulation
                 string colour = GetProperty(item.Value, "colour");
                 string dimension = GetProperty(item.Value, "dimension");
                 string descriptor = GetProperty(item.Value, "descriptior");
+                string location = GetProperty(item.Value, "initial_location");
+
+                Debug.Log(
+                    $"YAML Object: {itemName} | Colour: {colour} | Dimension: {dimension} | Descriptor: {descriptor} | Location: {location}"
+                );
+
 
                 // Debug.Log(
                 //     "Item: " + itemName +
@@ -49,12 +55,58 @@ namespace PDSim.Simulation
 
                 GameObject problemObjects = GameObject.Find("Problem Objects");
 
-                Transform itemTransform = problemObjects.transform.Find(itemName);
-
+                Transform itemTransform = problemObjects != null
+                    ? problemObjects.transform.Find(itemName)
+                    : null;
                 if (itemTransform == null)
                 {
-                    Debug.LogWarning("Could not find Problem Object: " + itemName);
-                    continue;
+                    
+                    GameObject backgroundObjects = GameObject.Find("Background Objects");
+                    // Find the "Background Objects" GameObject in the scene
+                    if (backgroundObjects == null)
+                    {
+                        backgroundObjects = new GameObject("Background Objects");
+                    }
+
+                    itemTransform = backgroundObjects.transform.Find(itemName);
+
+                    if (itemTransform == null)
+                    {
+                        GameObject newItem = new GameObject(itemName);
+
+                        newItem.transform.SetParent(backgroundObjects.transform);
+
+
+                        string[] split_location = location.Split('_');
+                        float locationX = GetCorrectPoint(split_location[1]);
+                        float locationY = GetCorrectPoint(split_location[2]);
+                        float locationZ = GetCorrectPoint(split_location[3]);
+                        newItem.transform.localPosition = new Vector3(locationX, locationY, locationZ);
+
+                        // Create the underlying structure to match exisiting PDSim objects
+
+                        // Create Cube
+                        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                        cube.name = "Cube";
+                        cube.transform.SetParent(newItem.transform,false);
+
+                        // Create TextMeshPro object
+                        GameObject textObject = new GameObject("Item_Label");
+                        textObject.transform.SetParent(cube.transform, false);
+
+                        TextMeshPro label = textObject.AddComponent<TextMeshPro>();
+                        label.alignment = TextAlignmentOptions.Center;
+                        label.fontSize = 3;
+                        label.transform.localPosition = new Vector3(0, 0.6f, 0);
+                        label.transform.localScale = Vector3.one * 0.1f;
+
+                        // Reassign Transform to the newly created item
+                        itemTransform = newItem.transform;
+                    }
+
+
+                    // Create a new Object in the scene with the name of the item
+
                 }
 
                 GameObject itemObject = itemTransform.gameObject;
@@ -68,9 +120,9 @@ namespace PDSim.Simulation
 
                 string[] split_colour = colour.Split('_');
 
-                float r_float = 255/float.Parse(split_colour[1]);
-                float g_float = 255/float.Parse(split_colour[2]);
-                float b_float = 255/float.Parse(split_colour[3]);
+                float r_float = float.Parse(split_colour[1])/255;
+                float g_float = float.Parse(split_colour[2])/255;
+                float b_float = float.Parse(split_colour[3])/255;
                 
                 Color currColour = new Color(r_float, g_float, b_float);
 
@@ -82,9 +134,9 @@ namespace PDSim.Simulation
 
                 // Set the dimension of the item
                 string[] split_dimension = dimension.Split('_');
-                float dimensionX = float.Parse(split_dimension[1]);
-                float dimensionY = float.Parse(split_dimension[2]);
-                float dimensionZ = float.Parse(split_dimension[3]);
+                float dimensionX = Mathf.Max(0.01f, float.Parse(split_dimension[1]));
+                float dimensionY = Mathf.Max(0.01f, float.Parse(split_dimension[2]));
+                float dimensionZ = Mathf.Max(0.01f, float.Parse(split_dimension[3]));
 
                 mainBlock.transform.localScale = new Vector3(dimensionX, dimensionY, dimensionZ);
 
@@ -94,8 +146,8 @@ namespace PDSim.Simulation
                 textMesh.text = descriptor;
 
 
-                DisableLocationMeshes();
             }
+            DisableLocationMeshes();
         }
 
     private void DisableLocationMeshes()
@@ -124,6 +176,17 @@ namespace PDSim.Simulation
             }
         }
     }
+
+    private float GetCorrectPoint(string location)
+        {
+            if (location.StartsWith("n"))
+            {
+                string correct_point = location.Substring(1); // Remove the 'n' prefix
+                float point = float.Parse(correct_point) * -1;
+                return point;
+            }
+            return float.Parse(location);
+        }
 
 
         private string GetProperty(
